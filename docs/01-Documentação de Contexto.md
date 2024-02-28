@@ -1,6 +1,8 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O Brasil, um país de diversidade cultural e belezas naturais, recebe turistas de todo o mundo e brasileiros em busca de aventuras. No entanto, muitos enfrentam o desafio da falta de orientação sobre os destinos. Para solucionar isso, surge o (En)Cantos no Brasil, uma iniciativa que visa informar e guiar os viajantes em suas jornadas pelo país. Nosso objetivo é facilitar a experiência de viagem, oferecendo todas as ferramentas necessárias para explorar as maravilhas do Brasil de maneira completa e enriquecedora, atendendo às necessidades dos viajantes além de contribuir para o setor de turismo no país.
+ 
+Este projeto reside na importância de fornecer um guia confiável e abrangente que atenda às necessidades dos viajantes modernos, que buscam informações precisas e relevantes para a sua estadia. O público-alvo principal são turistas em busca de recomendações confiáveis e detalhes sobre a cidade, permitindo-lhes explorar e desfrutar ao máximo de sua estadia.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
