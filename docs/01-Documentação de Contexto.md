@@ -5,11 +5,7 @@ O Brasil, um país de diversidade cultural e belezas naturais, recebe turistas d
 Este projeto reside na importância de fornecer um guia confiável e abrangente que atenda às necessidades dos viajantes modernos, que buscam informações precisas e relevantes para a sua estadia. O público-alvo principal são turistas em busca de recomendações confiáveis e detalhes sobre a cidade, permitindo-lhes explorar e desfrutar ao máximo de sua estadia.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Conforme exposto, o problema a ser resolvido com esta aplicação é a limitação de instruções que os meios tradicionais de informação estabelecem para quem deseja experimentar de maneira bem orientada, segura e bem recomendada sobre diversos destinos possíveis, do mais excêntrico ao mais acessível, e com confiabilidade, agilidade e imparcialidade.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
