@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# (En) Cantos do Brasil
 
 `CURSO`
 
