@@ -16,18 +16,21 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo da nossa aplicação é proporcionar aos viajantes uma experiência única e personalizada ao explorar as maravilhas naturais, culturais e gastronômicas do Brasil. Através de uma plataforma acessível e intuitiva, pretendemos conectar os usuários a uma vasta gama de informações sobre pontos turísticos, cachoeiras, trilhas, restaurantes e outras atrações em diversas cidades brasileiras. Nosso objetivo final é inspirar e facilitar viagens memoráveis e bem guiadas, promovendo o turismo sustentável e a valorização das riquezas do nosso país.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A criação desta aplicação surge da crescente demanda por ferramentas que simplifiquem o planejamento de viagens e permitam aos viajantes explorar destinos de forma mais autêntica e informada. Além disso, considerando o vasto território e a diversidade cultural do Brasil, há uma necessidade clara de uma plataforma abrangente que reúna informações atualizadas e confiáveis sobre as atrações de cada região.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Esta aplicação visa preencher essa lacuna ao oferecer uma solução completa para os viajantes, permitindo-lhes descobrir e explorar os pontos turísticos mais interessantes, as cachoeiras mais deslumbrantes, os restaurantes mais saborosos e uma infinidade de outras experiências únicas em cada cidade brasileira.
+
+Além de atender às necessidades dos viajantes, a nossa aplicação também beneficia as comunidades locais e o setor de turismo como um todo. Ao promover destinos e estabelecimentos locais, contribuímos para a distribuição mais equitativa dos benefícios do turismo e para o desenvolvimento sustentável das regiões visitadas. Isso fortalece a economia local, preserva o patrimônio cultural e natural do Brasil e fomenta um turismo mais consciente e responsável.
+
+Em resumo, a criação desta aplicação representa não apenas uma oportunidade de negócio promissora, mas também um compromisso com a promoção do turismo sustentável, a valorização da diversidade brasileira e a criação de experiências enriquecedoras para viajantes de todo o mundo.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
