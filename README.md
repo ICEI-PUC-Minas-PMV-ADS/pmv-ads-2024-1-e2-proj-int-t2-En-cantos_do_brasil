@@ -6,7 +6,7 @@
 
 `DISCIPLINA: Projeto - Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE: 2023.2`
+`SEMESTRE: 2024.1`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
