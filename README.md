@@ -1,10 +1,12 @@
 # (En) Cantos do Brasil
 
-`CURSO`
+<img src="documentos/img/en_cantos_do_Brasil.png" alt="Logo" width="200px" height="auto" style="float: left; margin-right: 10;">
 
-`DISCIPLINA`
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
-`SEMESTRE`
+`DISCIPLINA: Projeto - Desenvolvimento de uma Aplicação Interativa`
+
+`SEMESTRE: 2023.2`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
@@ -18,7 +20,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
