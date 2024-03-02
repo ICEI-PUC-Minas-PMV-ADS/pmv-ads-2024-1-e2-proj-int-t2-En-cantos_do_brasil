@@ -1,6 +1,6 @@
-# (En) Cantos do Brasil
+# (EN) Cantos do Brasil
 
-<img src="documentos/img/en_cantos_do_Brasil.png" alt="Logo" width="200px" height="auto" style="float: left; margin-right: 10;">
+<img src="docs/img/LOGO.png" alt="Logo" width="200px" height="auto" style="float: left; margin-right: 10;">
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
