@@ -34,17 +34,13 @@ Em resumo, a criação desta aplicação representa não apenas uma oportunidade
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
-------------------------
+
 Com base na análise dos dados da pesquisa realizada com 35 participantes, é possível delinear o perfil predominante do público-alvo do (En)Cantos no Brasil. Esses dados revelam as principais preocupações, preferências e comportamentos dos potenciais usuários da plataforma. 
 
 O público-alvo do (En)Cantos no Brasil pode ser definido como indivíduos predominantemente jovens adultos, com idade entre 18 e 35 anos, de ambos os sexos, e sem um limite geográfico específico. Esse público enfrenta desafios comuns ao planejar uma viagem, destacando-se a necessidade de encontrar acomodações adequadas que se encaixem no orçamento, a preocupação com a segurança durante a viagem, especialmente em destinos desconhecidos, e o planejamento logístico, como transporte entre os destinos e itinerários de viagem. Além disso, valorizam experiências de viagem relacionadas à cultura, aventura e gastronomia, sendo influenciados principalmente pelo destino desejado e por seus interesses pessoais, como cultura, gastronomia e aventura, na hora de tomar decisões de viagem. 
 
 
-
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
+***
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
