@@ -57,10 +57,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-08 | Mapas e Navegação: Integrar mapas interativos para ajudar os usuários a se localizarem nos destinos e planejarem seus deslocamentos. | Média |
 | RF-09 | Notificações: Enviar notificações para os usuários sobre novas atrações, eventos locais, promoções de viagem, etc. | Baixa |
 
-**Prioridade: Alta / Média / Baixa. 
-
 ### Requisitos não Funcionais
-
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
@@ -68,15 +65,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-02 | Desempenho: Garantir que a aplicação seja responsiva e tenha um tempo de carregamento rápido, mesmo em áreas com conexões de internet lentas. | Alta |
 | RNF-03 | Confiabilidade: Garantir que a aplicação opere de maneira confiável e consistente, entregando resultados precisos e esperados sob condições normais de operação, promovendo assim a confiança dos usuários na plataforma. | Alta |
 | RNF-04 | Robustez: Garantir que a aplicação seja capaz de lidar eficazmente com situações excepcionais, como erros de sistema, falhas de conexão, entradas de dados inválidas e outras condições adversas, mantendo a estabilidade e a funcionalidade adequada. | Alta |
-| RNF-05 | Escalabilidade: Projetar a aplicação de forma a suportar um grande número de usuários e uma crescente base de dados de destinos e atividades. | Média |
 | RNF-06 | Compatibilidade: Certificar-se de que a aplicação seja compatível com diferentes dispositivos (computadores, smartphones, tablets) e navegadores web. | Alta |
 | RNF-07 | Usabilidade: Projetar uma interface intuitiva e fácil de usar, com navegação clara e instruções claras para os usuários. | Alta |
 | RNF-08 | Disponibilidade: Assegurar que a aplicação esteja disponível 24/7, minimizando o tempo de inatividade para manutenção e atualizações. | Alta |
 | RNF-09 | Backup e Recuperação: Implementar um sistema de backup regular para garantir a recuperação de dados em caso de falhas no sistema ou perda de dados. | Média |
-| RNF-10 | Localização: Oferecer suporte para diferentes idiomas e adaptar as informações de acordo com a localização geográfica do usuário. | Baixa |
-
-**Prioridade: Alta / Média / Baixa. 
-
+| RNF-10 | Localização: Oferecer suporte para diferentes idiomas e adaptar as informações de acordo com a localização geográfica do usuário. | Media |
+| RNF-05 | Escalabilidade: Projetar a aplicação de forma a suportar um grande número de usuários e uma crescente base de dados de destinos e atividades. | Baixa |
 
 ## Restrições
 
