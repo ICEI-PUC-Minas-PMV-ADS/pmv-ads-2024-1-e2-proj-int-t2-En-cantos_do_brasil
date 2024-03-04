@@ -85,14 +85,18 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|02| Deve ser desenvolvido um módulo de backend        |
+|03| Deve haver uma integração entre o módulo beckend e o front        |
+|04| O projeto deve ser interativo com os usuários         |
+|05| Deve ser priorizada a Qualidade na entrega à quantidade de recursos        |
+|06| O projeto deve contar com o desenvolvimento por parte de cada componente do grupo        |
+|07| Todos os componentes deverão dispor de ao menos 6 horas semanais para a evolução do projeto        |
+|08| O projeto deverá seguir um orçamento nulo para a sua execução        |
+|09| O projeto deverá apresentar os benefícios estipulados para o usuário que o acessar        |
+|10| Deverão ser desenvolvidos testes da aplicação pelos componentes do grupo        |
+|11| O projeto deve ser registrado em algum domínio e deverá ser acessível online        |
+|12| O projeto deve apresentar o respectivo design ideal para diferentes dispositivos        |
+|13| O projeto deve apresentar ser dotado de sistema para Backup e Recuperação dos dados       |
 
 ## Diagrama de Casos de Uso
 
