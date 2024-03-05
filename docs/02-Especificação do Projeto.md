@@ -40,14 +40,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
 | RF-01 | Cadastro de Usuário: Permitir que os usuários se cadastrem na plataforma para acessar funcionalidades exclusivas. | Alta | 
-| RF-02 | Tela Inicial: Uma introdução à plataforma, apresentando de forma sucinta sua proposta e funcionalidades principais, servindo como um guia para novos usuários. | Alta |
-| RF-03 | Pesquisa de Destinos: Implementar um sistema de pesquisa que permita aos usuários buscar destinos por nome, região, atividades disponíveis, etc. | Alta |
-| RF-04 | Informações sobre Destinos: Fornecer informações detalhadas sobre os destinos, incluindo atrações turísticas, atividades disponíveis, melhores épocas para visitar, custo de vida, entre outros. | Alta |
-| RF-05 | Roteiros Personalizados: Oferecer a opção de criar roteiros personalizados com base nas preferências dos usuários, como interesse em ecoturismo, cultura local, aventura, etc. | Média |
-| RF-06 | Avaliações e Comentários: Permitir que os usuários deixem avaliações e comentários sobre os destinos visitados, hotéis, restaurantes, agências de turismo, etc. | Média |
-| RF-07 | Agendamento de Atividades: Integrar um sistema de reserva para atividades turísticas, como passeios guiados, trilhas, mergulhos, etc. | Média |
-| RF-08 | Mapas e Navegação: Integrar mapas interativos para ajudar os usuários a se localizarem nos destinos e planejarem seus deslocamentos. | Média |
-| RF-09 | Notificações: Enviar notificações para os usuários sobre novas atrações, eventos locais, promoções de viagem, etc. | Baixa |
+| RF-02 | Tela de Login: A aplicação deve permitir que os usuários façam login e logout. | Alta |
+| RF-03 | Barra de Pesquisa: O usuário deve ser capaz de pesquisar destinos por nome, região, atividades disponíveis, etc. | Alta |
+| RF-04 | A aplicação deve fornecer informações detalhadas sobre os destinos, incluindo atrações turísticas, atividades disponíveis, melhores épocas para visitar, custo de vida, entre outros. | Alta |
+| RF-05 | A aplicação deve oferecer roteiros personalizados com base nas preferências dos usuários, como interesse em ecoturismo, cultura local, aventura, etc. | Média |
+| RF-06 | Os usuários devem ser capazes de deixar avaliações e comentários sobre os destinos. | Alta |
+| RF-07 | O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc. | Média |
+| RF-08 | A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. | Alta |
+| RF-09 | A aplicação deve barrar entradas de dados inválidas e outras condições adversas, mantendo a funcionalidade adequada.  | Baixa |
 
 ### Requisitos não Funcionais
 
@@ -56,13 +56,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-01 | Segurança: Garantir a segurança dos dados dos usuários, implementando medidas de criptografia e controle de acesso. | Alta  | 
 | RNF-02 | Desempenho: Garantir que a aplicação seja responsiva e tenha um tempo de carregamento rápido, mesmo em áreas com conexões de internet lentas. | Alta |
 | RNF-03 | Confiabilidade: Garantir que a aplicação opere de maneira confiável e consistente, entregando resultados precisos e esperados sob condições normais de operação, promovendo assim a confiança dos usuários na plataforma. | Alta |
-| RNF-04 | Robustez: Garantir que a aplicação seja capaz de lidar eficazmente com situações excepcionais, como erros de sistema, falhas de conexão, entradas de dados inválidas e outras condições adversas, mantendo a estabilidade e a funcionalidade adequada. | Alta |
-| RNF-06 | Compatibilidade: Certificar-se de que a aplicação seja compatível com diferentes dispositivos (computadores, smartphones, tablets) e navegadores web. | Alta |
-| RNF-07 | Usabilidade: Projetar uma interface intuitiva e fácil de usar, com navegação clara e instruções claras para os usuários. | Alta |
-| RNF-08 | Disponibilidade: Assegurar que a aplicação esteja disponível 24/7, minimizando o tempo de inatividade para manutenção e atualizações. | Alta |
-| RNF-09 | Backup e Recuperação: Implementar um sistema de backup regular para garantir a recuperação de dados em caso de falhas no sistema ou perda de dados. | Média |
-| RNF-10 | Localização: Oferecer suporte para diferentes idiomas e adaptar as informações de acordo com a localização geográfica do usuário. | Media |
-| RNF-05 | Escalabilidade: Projetar a aplicação de forma a suportar um grande número de usuários e uma crescente base de dados de destinos e atividades. | Baixa |
+| RNF-04 | Robustez: Garantir que a aplicação seja capaz de lidar eficazmente com situações excepcionais, como erros de sistema, falhas de conexão, entradas de dados inválidas, etc. | Alta |
+| RNF-05 | Compatibilidade: Certificar-se de que a aplicação seja compatível com diferentes dispositivos (computadores, smartphones, tablets) e navegadores web. | Alta |
+| RNF-06 | Usabilidade: Projetar uma interface intuitiva e fácil de usar, com navegação clara e instruções claras para os usuários. | Alta |
+| RNF-07 | Disponibilidade: Assegurar que a aplicação esteja disponível 24/7, minimizando o tempo de inatividade para manutenção e atualizações. | Alta |
 
 ## Restrições
 
@@ -82,7 +79,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |10| Deverão ser desenvolvidos testes da aplicação pelos componentes do grupo        |
 |11| O projeto deve ser registrado em algum domínio e deverá ser acessível online        |
 |12| O projeto deve apresentar o respectivo design ideal para diferentes dispositivos        |
-|13| O projeto deve apresentar ser dotado de sistema para Backup e Recuperação dos dados       |
 
 ## Diagrama de Casos de Uso
 
