@@ -47,7 +47,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-06 | Os usuários devem ser capazes de deixar avaliações e comentários sobre os destinos. | Alta |
 | RF-07 | O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc. | Média |
 | RF-08 | A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. | Alta |
-| RF-09 | A aplicação deve barrar entradas de dados inválidas e outras condições adversas, mantendo a funcionalidade adequada.  | Baixa |
 
 ### Requisitos não Funcionais
 
