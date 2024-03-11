@@ -10,6 +10,17 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ![personas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-en-cantos_do_brasil/assets/144967071/8c4a610a-a54d-4156-b86d-8523a9f25599)
 ![aade](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-en-cantos_do_brasil/assets/144967071/9866800b-8085-47ad-bc6c-e802017312ab)
 
+ ## Stakeholders
+
+## Governo Brasileiro:
+
+Envolvimento: Oferecendo incentivos fiscais, parcerias para promover destinos menos conhecidos, fornecendo dados e informações sobre a infraestrutura turística.
+
+## Empresas de Turismo e Hospedagem:
+
+Envolvimento: Parcerias para oferecer pacotes turísticos, disponibilização de informações sobre acomodações e serviços turísticos, marketing conjunto para atrair mais turistas.
+
+ Os próprios usuários da  aplicação são stakeholders essenciais, pois são eles que usarão a plataforma para planejar suas viagens e explorar os destinos pelo Brasil. 
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
