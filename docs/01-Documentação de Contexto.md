@@ -2,7 +2,7 @@
 
 O Brasil, um país de diversidade cultural e belezas naturais, recebe turistas de todo o mundo e brasileiros em busca de aventuras. No entanto, muitos enfrentam o desafio da falta de orientação sobre os destinos. Para solucionar isso, surge o (En)Cantos no Brasil, uma iniciativa que visa informar e guiar os viajantes em suas jornadas pelo país. Nosso objetivo é facilitar a experiência de viagem, oferecendo todas as ferramentas necessárias para explorar as maravilhas do Brasil de maneira completa e enriquecedora, atendendo às necessidades dos viajantes além de contribuir para o setor de turismo no país.
  
-Este projeto reside na importância de fornecer um guia confiável e abrangente que atenda às necessidades dos viajantes modernos, que buscam informações precisas e relevantes para a sua estadia. O público-alvo principal são turistas em busca de recomendações confiáveis e detalhes sobre a cidade, permitindo-lhes explorar e desfrutar ao máximo de sua estadia.
+Este projeto reside na importância de fornecer um guia confiável e abrangente que atenda às necessidades dos viajantes modernos, que buscam informações precisas e relevantes para a sua estadia. 
 
 ## Problema
 Conforme exposto, o problema a ser resolvido com esta aplicação é a limitação de instruções que os meios tradicionais de informação estabelecem para quem deseja experimentar de maneira bem orientada, segura e bem recomendada sobre diversos destinos possíveis, do mais excêntrico ao mais acessível, e com confiabilidade, agilidade e imparcialidade.
