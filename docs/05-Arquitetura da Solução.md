@@ -1,4 +1,3 @@
-![ER -entidade relacionamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/11ea6c5d-ff39-48d8-96c9-ca26a2917259)# Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
