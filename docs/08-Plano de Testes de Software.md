@@ -25,10 +25,8 @@
 |:---:	|:---:	|
 |Requisito Associado | RF-04 -A aplicação deve fornecer informações detalhadas sobre os destinos, incluindo atrações turísticas e atividades disponíveis.|
 |Objetivo do Teste |  Verificar se a aplicação apresenta informações detalhadas sobre os destinos. |
-|Passos |Acessar o navegador.-Informar o endereço do site.-Pesquisar e selecionar um destino específico.-Verificar se são apresentadas as seguintes informações sobre o destino:
--Atrações turísticas
--Atividades disponíveis
--Melhores épocas para visitar |
+|Passos |Acessar o navegador.-Informar o endereço do site.-Pesquisar e selecionar um destino específico.-Verificar se são apresentadas as seguintes informações sobre o destino: Atrações turísticas,Atividades disponíveis,-Melhores épocas para visitar
+|
 |Critério de Êxito | -  a fazer. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Roteiros Personalizados** 	|
