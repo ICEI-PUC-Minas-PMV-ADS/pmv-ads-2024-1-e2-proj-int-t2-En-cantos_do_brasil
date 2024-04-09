@@ -7,7 +7,6 @@
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	|Acessar o navegador.-Informar o endereço do site,Clicar em "Criar conta",Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha),Aceitar os termos de uso.-Clicar em "Registrar". |
 |Critério de Êxito | - A fazer |
-
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 |Requisito Associado | RF-02 - Tela de Login: A aplicação deve permitir que os usuários façam login e logout. |
