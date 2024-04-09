@@ -27,50 +27,45 @@
 | Critério de Êxito | - a fazer |
 
 |  	|  	|
-| **Caso de Teste** 	| **CT-04 - Informações Detalhadas sobre Destinos** 	|
-|:---:	|:---:	|
-|Requisito Associado | RF-04 -A aplicação deve fornecer informações detalhadas sobre os destinos, incluindo atrações turísticas e atividades disponíveis.|
-|Objetivo do Teste |  Verificar se a aplicação apresenta informações detalhadas sobre os destinos. |
-|Passos |Acessar o navegador.-Informar o endereço do site.-Pesquisar e selecionar um destino específico.-Verificar se são apresentadas as seguintes informações sobre o destino: Atrações turísticas,Atividades disponíveis,-Melhores épocas para visitar|
-|Critério de Êxito | -  a fazer. |
 
-|  	|  	|
-| **Caso de Teste** 	| **CT-05 – Roteiros Personalizados** 	|
+| **Caso de Teste** 	| **CT-04 – Adicionar Produto ao Carrinho** 	|
 |:---:	|:---:	|
-|Requisito Associado | RF-05 - A aplicação deve oferecer roteiros personalizados com base nas preferências dos usuários, como interesse em ecoturismo, cultura local, aventura, etc.|
-|Objetivo do Teste |  Verificar se a aplicação gera roteiros personalizados com base nas preferências dos usuários. |
-|Passos |Acessar o navegador.-Informar o endereço do site.Clicar na opção "Roteiros Personalizados".-Indicar as preferências de roteiro, como:
--Tipo de experiência desejada (ecoturismo, cultura local, aventura, etc.)
--Duração do roteiro
--Período do ano para viajar
--Orçamento disponível
--Pontos de interesse específicos
--Clicar em "Gerar Roteiro". |
-|Critério de Êxito | -  a fazer. |
-
-|  	|  	|
-| **Caso de Teste** 	| **CT-06 - Avaliações e Comentários** 	|
-|:---:	|:---:	|
-|Requisito Associado | RF-06 - Os usuários devem ser capazes de deixar avaliações e comentários sobre os destinos.|
-|Objetivo do Teste |   Verificar se os usuários podem deixar avaliações e comentários sobre os destinos. |
-|Passos |Acessar o navegador.-Informar o endereço do site.-Selecionar um destino específico.-Clicar no botão "Avaliar" ou "Comentar".-Preencher o formulário de avaliação/comentário, incluindo a nota e o texto da avaliação/comentário.-Clicar em "Enviar".|
-|Critério de Êxito | -  a fazer. |
-
-|  	|  	|
-| **Caso de Teste** 	| **CT-07 – Página de Reserva e Consulta** 	|
-|:---:	|:---:	|
-|Requisito Associado |  RF-07 - O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc.|
-|Objetivo do Teste |  Verificar se o sistema direciona corretamente o usuário para a página de reserva e consulta. |
-|Passos |Acessar o navegador.-Informar o endereço do site.Selecionar um destino específico.-Clicar na guia "Reservas" ou "Consultas".-Selecionar o tipo de serviço desejado (hospedagem, atividade turística, etc.).-Preencher os filtros de pesquisa (data, número de pessoas, etc.).-Clicar em "Pesquisar".|
-|Critério de Êxito | -  a fazer. |
+| Requisito Associado | RF-04 - Carrinho de Compras: Os usuários devem ser capazes de adicionar produtos ao carrinho para posterior compra. |
+| Objetivo do Teste | Verificar se o usuário consegue adicionar um produto ao carrinho de compras. |
+| Passos | Acessar o navegador. - Navegar até a página do produto desejado. - Clicar em "Adicionar ao Carrinho". - Verificar se o produto foi adicionado corretamente. |
+| Critério de Êxito | - A fazer |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-08 – Adicionar Destinos aos Favoritos** 	|
+| **Caso de Teste** 	| **CT-05 – Finalizar Compra** 	|
 |:---:	|:---:	|
-|Requisito Associado |  RF-08 - A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos.|
-|Objetivo do Teste |  Verificar se os usuários podem adicionar destinos à lista de favoritos. |
-|Passos |Acessar o navegador.-Informar o endereço do site.Pesquisar e selecionar um destino específico.-Clicar no botão "Favoritos" ou "Adicionar aos Favoritos".-Confirmar a adição do destino aos favoritos.|
-|Critério de Êxito | -  a fazer. |
+| Requisito Associado | RF-05 - Finalização de Compra: Os usuários devem conseguir finalizar a compra dos produtos no carrinho. |
+| Objetivo do Teste | Verificar se o usuário consegue concluir com sucesso a compra dos produtos no carrinho. |
+| Passos | Acessar o navegador. - Acessar o carrinho de compras. - Verificar os produtos no carrinho. - Clicar em "Finalizar Compra". - Preencher as informações necessárias para a compra. - Confirmar a compra. |
+| Critério de Êxito | - A fazer |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-06 – Visualizar Histórico de Compras** 	|
+|:---:	|:---:	|
+| Requisito Associado | RF-06 - Histórico de Compras: Os usuários devem ter acesso ao histórico de compras realizadas na plataforma. |
+| Objetivo do Teste | Verificar se o usuário consegue visualizar seu histórico de compras. |
+| Passos | Acessar o navegador. - Acessar a conta do usuário. - Navegar até a seção de histórico de compras. - Verificar se as compras anteriores são exibidas corretamente. |
+| Critério de Êxito | - A fazer |
+
+|  	|  	|
+| **Caso de Teste** 	| **CT-07 – Configurações de Conta** 	|
+|:---:	|:---:	|
+| Requisito Associado | RF-07 - Configurações de Conta: Os usuários devem poder configurar as preferências da sua conta na plataforma. |
+| Objetivo do Teste | Verificar se o usuário consegue acessar e modificar as configurações da conta. |
+| Passos | Acessar o navegador. - Acessar a conta do usuário. - Navegar até a seção de configurações da conta. - Realizar alterações nas preferências da conta. - Salvar as configurações modificadas. |
+| Critério de Êxito | - A fazer |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-08 – Recuperação de Senha** 	|
+|:---:	|:---:	|
+| Requisito Associado | RF-08 - Recuperação de Senha: Os usuários devem ter a opção de recuperar sua senha em caso de esquecimento. |
+| Objetivo do Teste | Verificar se o usuário consegue recuperar sua senha com sucesso. |
+| Passos | Acessar o navegador. - Acessar a página de login. - Clicar na opção "Esqueceu sua senha?". - Informar o e-mail associado à conta. - Verificar o e-mail para as instruções de recuperação de senha. - Seguir as instruções para redefinir a senha. |
+| Critério de Êxito | - A fazer |
 
 
 
