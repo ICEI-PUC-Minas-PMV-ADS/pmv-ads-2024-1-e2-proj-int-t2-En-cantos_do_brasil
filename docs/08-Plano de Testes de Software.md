@@ -2,7 +2,7 @@
 
 | **Caso de Teste** 	| **CT-01 – Cadastro de Usuário** |
 |:---:	|:---:	|
-| Requisito Associado 	| RF-01 - Cadastro de Usuário: Permitir que os usuários se cadastrem na plataforma para acessar funcionalidades exclusivas. |
+| Requisito Associado 	| RF-01 - Permitir que os usuários se cadastrem na plataforma para acessar funcionalidades exclusivas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| Acessar o navegador. - Informar o endereço do site. - Clicar em "Criar conta". - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha). - Aceitar os termos de uso. - Clicar em "Registrar". |
 | Critério de Êxito | - A fazer |
@@ -10,7 +10,7 @@
 
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 |:---:	|:---:	|
-| Requisito Associado | RF-02 - Tela de Login: A aplicação deve permitir que os usuários façam login e logout. |
+| Requisito Associado | RF-02 - A aplicação deve permitir que os usuários façam login e logout. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| Acessar o navegador. - Informar o endereço do site. - Clicar em "Entrar". - Preencher o campo de e-mail. - Preencher o campo da senha. - Clicar em "Login". |
 | Critério de Êxito | - A fazer |
@@ -18,7 +18,7 @@
 
 | **Caso de Teste** 	| **CT-03 – Barra de Pesquisa** 	|
 |:---:	|:---:	|
-| Requisito Associado | RF-03 - Barra de Pesquisa: O usuário deve ser capaz de pesquisar destinos por nome, região, atividades disponíveis, etc. |
+| Requisito Associado | RF-03 -  O usuário deve ser capaz de pesquisar destinos por nome, região, atividades disponíveis, etc. |
 | Objetivo do Teste | Testar a funcionalidade de pesquisa de destinos na plataforma. |
 | Passos | Acessar o navegador. - Informar o endereço do site. - Localizar a barra de pesquisa. - Inserir termos de pesquisa (nome, região, atividades disponíveis, etc.). - Pressionar Enter ou clicar no botão de pesquisa. - Verificar os resultados apresentados. |
 | Critério de Êxito | - A fazer |
