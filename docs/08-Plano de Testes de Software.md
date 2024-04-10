@@ -25,7 +25,6 @@
 | Objetivo do Teste | Testar a funcionalidade de pesquisa de destinos na plataforma. |
 | Passos | Acessar o navegador. - Informar o endereço do site. - Localizar a barra de pesquisa. - Inserir termos de pesquisa (nome, região, atividades disponíveis, etc.). - Pressionar Enter ou clicar no botão de pesquisa. - Verificar os resultados apresentados. |
 | Critério de Êxito | - a fazer |
-
 |  	|  	|
 
 | **Caso de Teste** 	| **CT-04 – Adicionar Produto ao Carrinho** 	|
@@ -50,8 +49,8 @@
 | Objetivo do Teste | Verificar se o usuário consegue visualizar seu histórico de compras. |
 | Passos | Acessar o navegador. - Acessar a conta do usuário. - Navegar até a seção de histórico de compras. - Verificar se as compras anteriores são exibidas corretamente. |
 | Critério de Êxito | - A fazer |
-
 |  	|  	|
+
 | **Caso de Teste** 	| **CT-07 – Configurações de Conta** 	|
 |:---:	|:---:	|
 | Requisito Associado | RF-07 - Configurações de Conta: Os usuários devem poder configurar as preferências da sua conta na plataforma. |
