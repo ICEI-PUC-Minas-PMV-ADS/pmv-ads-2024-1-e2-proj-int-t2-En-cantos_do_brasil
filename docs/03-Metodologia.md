@@ -24,6 +24,9 @@ Foi optado por adotar a metodologia Kanban, uma abordagem ágil que prioriza a v
 Done: finalmente, quando uma tarefa é concluída, ela é movida para a coluna "Done". Aqui, a equipe revisa o trabalho realizado, assegurando que atende aos requisitos e padrões de qualidade estabelecidos. Uma vez validada, a tarefa é considerada oficialmente concluída.
 Abaixo uma imagem de como está o kanban:
 
+<img width="650" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/85742337/a436d04d-6186-4090-b903-aa280914d645">
+
+
 
 ### Etiquetas
 
@@ -37,8 +40,8 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 * Testes (Tests)
 
 ### Ferramentas
-                  |
-> - [Repositório de código fonte - Github]([https://guides.github.com/activities/hello-world/](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1))
+
+> - [Repositório de código fonte - Github]([https://guides.github.com/activities/hello-world/](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1)
 > - [Documentos do projeto- GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/tree/main/docs)
 > - [Projeto de Interface - Figma](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
 > - [Ambiente de reunião - Microsoft Teams](https://teams.microsoft.com/_#/school/conversations/Geral?threadId=19:rhIE0idjoNgQHZPXsmFC3tAOm2YhwrxhnBxDpORmZ1M1@thread.tacv2&ctx=channel)
