@@ -49,4 +49,4 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 
   ### Estratégia de Organização de Codificação
 
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [Código fonte - Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [Código fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
