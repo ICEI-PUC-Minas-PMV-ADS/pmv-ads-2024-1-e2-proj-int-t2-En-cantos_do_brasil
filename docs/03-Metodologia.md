@@ -14,12 +14,6 @@ No contexto do projeto, foi tomada a decisão estratégica de adotar a metodolog
 * Equipe de Desenvolvimento: Gabriel Cardoso, Ettore Motta Gazzinelli e Tainara Oliveira Souza
 * Equipe de Design: Luiza Maria da Silva Machado
 
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
 Foi optado por adotar a metodologia Kanban, uma abordagem ágil que prioriza a visualização e o gerenciamento do fluxo de trabalho. Integrado ao Kanban, foi elegido utilizar o GitHub Projects como ferramenta central para listar e controlar todas as tarefas relacionadas ao projeto. Esta decisão estratégica foi fundamentada na necessidade de um sistema robusto que permitisse organizar e acompanhar o progresso das atividades de forma eficaz. A estrutura do quadro Kanban no GitHub Projects foi dividida em quatro principais colunas:
@@ -43,10 +37,9 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 * Testes (Tests)
 
 ### Ferramentas
-
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+                  |
+> - [Repositório de código fonte - Github]([https://guides.github.com/activities/hello-world/](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1))
+> - [Documentos do projeto- GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/tree/main/docs)
+> - [Projeto de Interface - Figma](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+> - [Ambiente de reunião - Microsoft Teams](https://teams.microsoft.com/_#/school/conversations/Geral?threadId=19:rhIE0idjoNgQHZPXsmFC3tAOm2YhwrxhnBxDpORmZ1M1@thread.tacv2&ctx=channel)
   
