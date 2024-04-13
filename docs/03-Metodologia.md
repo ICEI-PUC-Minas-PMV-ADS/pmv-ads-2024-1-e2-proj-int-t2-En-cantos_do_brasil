@@ -44,7 +44,7 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 
 > - [Repositório de código fonte - Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1)
 > - [Documentos do projeto- GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/tree/main/docs)
-> - [Projeto de Interface - Figma](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+> - [Projeto de Interface - Figma](https://www.figma.com/)
 > - [Ambiente de reunião - Microsoft Teams](https://teams.microsoft.com/_#/school/conversations/Geral?threadId=19:rhIE0idjoNgQHZPXsmFC3tAOm2YhwrxhnBxDpORmZ1M1@thread.tacv2&ctx=channel)
 
   ### Estratégia de Organização de Codificação
