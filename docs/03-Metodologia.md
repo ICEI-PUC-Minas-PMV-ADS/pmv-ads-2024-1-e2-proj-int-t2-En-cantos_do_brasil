@@ -24,7 +24,8 @@ Foi optado por adotar a metodologia Kanban, uma abordagem ágil que prioriza a v
 Done: finalmente, quando uma tarefa é concluída, ela é movida para a coluna "Done". Aqui, a equipe revisa o trabalho realizado, assegurando que atende aos requisitos e padrões de qualidade estabelecidos. Uma vez validada, a tarefa é considerada oficialmente concluída.
 Abaixo uma imagem de como está o kanban:
 
-<img width="650" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/85742337/a436d04d-6186-4090-b903-aa280914d645">
+<img width="806" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/85742337/0a21a11a-fec5-4c8f-bc9b-009874fe8ffd">
+
 
 
 
