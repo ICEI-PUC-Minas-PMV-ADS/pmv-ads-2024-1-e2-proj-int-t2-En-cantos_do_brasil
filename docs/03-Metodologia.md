@@ -18,9 +18,8 @@ No contexto do projeto, foi tomada a decisão estratégica de adotar a metodolog
 
 Foi optado por adotar a metodologia Kanban, uma abordagem ágil que prioriza a visualização e o gerenciamento do fluxo de trabalho. Integrado ao Kanban, foi elegido utilizar o GitHub Projects como ferramenta central para listar e controlar todas as tarefas relacionadas ao projeto. Esta decisão estratégica foi fundamentada na necessidade de um sistema robusto que permitisse organizar e acompanhar o progresso das atividades de forma eficaz. A estrutura do quadro Kanban no GitHub Projects foi dividida em quatro principais colunas:
 
-* Backlog: é o ponto de entrada para todas as tarefas do projeto. Aqui, lista-se todas as funcionalidades, melhorias e correções que precisam ser implementadas. Cada item no Backlog é detalhado e priorizado, garantindo que a equipe saiba quais são as próximas metas a serem atingidas.
-* To Do: Quando uma tarefa é selecionada para execução, ela é movida para a coluna "To Do". Nesta fase, as atividades são claramente definidas, e os membros da equipe podem acessar as informações necessárias para iniciar o trabalho. Esta coluna representa a lista de tarefas imediatas que precisam ser realizadas.
-* Doing: nessa coluna as tarefas estão em andamento. Isso significa que os membros da equipe estão ativamente trabalhando nelas.
+* Todo: é o ponto de entrada para todas as tarefas do projeto. Aqui, lista-se todas as funcionalidades, melhorias e correções que precisam ser implementadas. Cada item no Backlog é detalhado e priorizado, garantindo que a equipe saiba quais são as próximas metas a serem atingidas.
+* In Progress: nessa coluna as tarefas são selecionadas para execução e colocadas em andamento. Isso significa que os membros da equipe estão ativamente trabalhando nelas.
 Done: finalmente, quando uma tarefa é concluída, ela é movida para a coluna "Done". Aqui, a equipe revisa o trabalho realizado, assegurando que atende aos requisitos e padrões de qualidade estabelecidos. Uma vez validada, a tarefa é considerada oficialmente concluída.
 Abaixo uma imagem de como está o kanban:
 
@@ -33,12 +32,10 @@ Abaixo uma imagem de como está o kanban:
 
 As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
 
-* Bug (Erro no código)
-* Desenvolvimento (Development)
-* Documentação (Documentation)
-* Gerência de Projetos (Project Management)
-* Infraestrutura (Infrastructure)
-* Testes (Tests)
+* Todo (início)
+* In Progress ( em andamento)
+* Done (finalizado)
+
 
   <img width="836" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/85742337/549587b8-6888-4dd2-950a-58584cfb7b11">
 
