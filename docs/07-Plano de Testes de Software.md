@@ -4,7 +4,7 @@
 |:---:	|:---:	|
 | Requisito Associado 	| RF-01 - Permitir que os usuários se cadastrem na plataforma para acessar funcionalidades exclusivas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| Acessar o navegador. - Informar o endereço do site. - Clicar em "Criar conta". - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha). - Aceitar os termos de uso. - Clicar em "Registrar". |
+| Passos 	| Acessar o navegador. - Informar o endereço do site. - Clicar em "Criar conta". - Preencher os campos obrigatórios (e-mail, nome, senha, confirmação de senha). - Aceitar os termos de uso. - Clicar em "Registrar". |
 | Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 
