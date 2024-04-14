@@ -7,8 +7,7 @@
 
 O 'Encantos do Brasil' é um sistema dedicado a destacar as maravilhas turísticas do país. Através de um diagrama de classes, visualizamos a estrutura interna do sistema, incluindo suas regiões, estados e pontos turísticos. Cada região e estado é representado como uma classe, com atributos que descrevem suas características únicas. Os pontos turísticos, por sua vez, são modelados como parte dessas classes, demonstrando suas relações e relevância dentro do contexto geográfico. Com essa representação clara da estrutura estática do sistema, podemos explorar e promover de forma eficaz as riquezas culturais e naturais do Brasil, facilitando a descoberta e planejamento de viagens incríveis.
 
-
-![Diagrama de classes](docs/img/WhatsApp Image 2024-04-01 at 20.18.17.jpeg)
+![Diagrama de classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/docs/img/WhatsApp%20Image%202024-04-01%20at%2020.18.17.jpeg?raw=true)
 
 
 
