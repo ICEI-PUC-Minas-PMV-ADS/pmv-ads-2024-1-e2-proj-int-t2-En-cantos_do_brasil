@@ -5,7 +5,7 @@ A metodologia contempla os instrumentos usados para manter os recursos e outras 
 
 ## Gerenciamento de Projeto
 
-No contexto do projeto, foi tomada a decisão estratégica de adotar a metodologia ágil para gerenciamento, com foco específico na implementação do Método Scrum. A escolha deliberada por essa abordagem foi fundamentada em uma série de razões, visando aprimorar a eficiência, a flexibilidade e a colaboração durante todo o ciclo de vida do projeto.
+No contexto do projeto, foi tomada a decisão estratégica de adotar a metodologia ágil para gerenciamento, com foco específico na implementação do Método Kanban. A escolha deliberada por essa abordagem foi fundamentada em uma série de razões, visando aprimorar a eficiência, a flexibilidade e a colaboração durante todo o ciclo de vida do projeto.
 
 ### Divisão de Papéis
 
