@@ -23,15 +23,15 @@ Teste Remoto não moderado
 
 #### Teste de Usabilidade para o perfil Usuário
 • Verificar se os usuários conseguem se cadastrar facilmente.
+
 • Verificar se após o cadastro, os usuários conseguem Logar com facilidade à plataforma.
+
 • Verificar o Nivel de Satisfação  do Usuário quanto á interface (Se é de fácil entendemento, agradável, etc. )
+
 • Verificar se o Usuário está satisfeito com a Barra de pesquisa, Se os resultados condizem com a sua pesquisa.
+
 • Verificar se o Usuário está satisfeito quanto as informações sobre o destino.
+
 • Verificar satisfação  do Usuário quanto a lista de favoritos.
 
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
