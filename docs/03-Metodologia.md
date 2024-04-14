@@ -40,6 +40,9 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 * Infraestrutura (Infrastructure)
 * Testes (Tests)
 
+  <img width="836" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/85742337/549587b8-6888-4dd2-950a-58584cfb7b11">
+
+
 ### Ferramentas
 
 > - [Repositório de código fonte - Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/src/README.md?plain=1)
