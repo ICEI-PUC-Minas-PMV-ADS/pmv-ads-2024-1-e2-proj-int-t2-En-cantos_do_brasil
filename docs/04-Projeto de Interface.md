@@ -13,7 +13,7 @@ O Diagrama de Fluxo abaixo representa possíveis etapas que o usuário poderá r
 
 Login: Autenticação com usuário e senha para acesso ao perfil e configurações de perfil;
 Cadastro: Para o primeiro acesso aos serviços do site;
-Acesso aos S=serviços: Disponível à todos os usuários cadastrados.
+Acesso aos serviços: Disponível à todos os usuários cadastrados.
 
 
 ![Fluxograma](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/docs/img/Fluxogramas(3).png)
