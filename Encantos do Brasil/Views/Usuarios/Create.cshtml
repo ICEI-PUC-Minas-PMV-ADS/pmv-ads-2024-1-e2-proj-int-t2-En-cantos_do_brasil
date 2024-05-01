@@ -6,51 +6,52 @@
 
 <h3>Cadastro Usuario</h3>
 
-<form class="row g-3">
-  <div class="col-md-4">
-        <label for="validationDefault01" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu nome" />
-  </div>
-  <div class="col-md-4">
-        <label for="validationDefaultUsername" class="form-label">Nome de Usuario</label>
-    <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2"   </span> 
-      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+<form asp-controller="Usuarios" asp-action="Create" method="post">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" placeholder="Digite seu nome" />
+        </div>
+        <div class="col-md-4">
+            <label asp-for="NomeUsuario" class="form-label">Nome de Usuario</label>
+            <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" required />
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" placeholder="Digite seu email" required />
+        </div>
+        <div class="col-md-3">
+            <label asp-for="Perfil" class="form-label">Preferência</label>
+            <select asp-for="Perfil" class="form-select" required>
+                <option value="">Escolha...</option>
+                <option>Destinos exóticos</option>
+                <option>Aventura ao ar livre</option>
+                <option>Patrimônio cultural</option>
+                <option>Relaxamento em resorts</option>
+                <option>Turismo gastronômico</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <label asp-for="Senha" class="form-label">Senha</label>
+            <input asp-for="Senha" class="form-control" placeholder="Digite sua senha" type="password" required />
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    Seus dados estão corretos?
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Salvar Edição</button>
+        </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationDefault03" class="form-label">Email</label>
-    <input type="text" class="form-control" id="validationDefault03" required>
-  </div>
-  <div class="col-md-3">
-        <label for="validationDefault04" class="form-label">Preferência</label>
-    <select class="form-select" id="validationDefault04" required>
-            <option selected disabled value="">Escolha...</option>
-            <option>Destinos exóticos</option>
-            <option>Aventura ao ar livre</option>
-            <option>Patrimônio cultural</option>
-            <option>Relaxamento em resorts</option>
-            <option>Turismo gastronômico</option>
-    </select>
-  </div>
-    <div class="col-12">
-        <label for="inputAddress" class="form-label">Senha</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Digite sua senha " />
-    </div>
-
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-      <label class="form-check-label" for="invalidCheck2">
-        Seus dados estão corretos?
-      </label>
-    </div>
-  </div>
-  <div class="col-12">
-        <button class="btn btn-primary" type="submit">Salvar Edição</button>
-  </div>
+    @Html.AntiForgeryToken() <!-- Adicione o token anti-falsificação -->
 </form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
