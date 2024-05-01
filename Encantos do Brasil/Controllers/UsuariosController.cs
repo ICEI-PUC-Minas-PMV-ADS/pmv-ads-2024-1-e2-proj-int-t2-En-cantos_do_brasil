@@ -21,13 +21,6 @@ namespace Encantos_do_Brasil.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
-        [Authorize(Roles ="Admin")]
-        public async Task<IActionResult> Index()
-        {
-              return View(await _context.Usuarios.ToListAsync());
-        }
-
         [AllowAnonymous]
         public IActionResult Login()
         {
