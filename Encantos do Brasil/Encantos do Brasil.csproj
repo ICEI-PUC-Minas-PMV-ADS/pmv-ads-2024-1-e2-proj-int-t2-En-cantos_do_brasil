@@ -10,7 +10,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\img\**" />
+    <Content Remove="wwwroot\img\**" />
+    <EmbeddedResource Remove="wwwroot\img\**" />
+    <None Remove="wwwroot\img\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Controllers\Login_LogoutController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Logo %282%29.png" />
+    <Content Remove="wwwroot\css\LOGO.png" />
   </ItemGroup>
 
   <ItemGroup>
