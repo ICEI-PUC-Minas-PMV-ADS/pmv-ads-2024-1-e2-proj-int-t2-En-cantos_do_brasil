@@ -23,15 +23,12 @@ body {
 body {
     width: auto;
     height: 800px;
-    background-image: url("CapaPrincipal.png");
+  
     background-repeat: no-repeat;
     background-size: contain;
 
 }
 
-navbar-brand {
-    background-image: url('../css/logoPrincipal.png');
-}
 
 footer {
     position: fixed;
@@ -51,11 +48,17 @@ footer {
     background-color: #ccf1dc;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 50px; /* Altura inicial da barra */
     text-align: center;
     z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
-    opacity: 0.9; /* 50% de transparência */
+    overflow: hidden; /* Esconde qualquer conteúdo que possa estender além da altura atual */
+    transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
 }
+
+    .container-fluid:hover {
+        height: 100px; /* Altura expandida da barra quando o mouse passa por cima */
+    }
+
 
  .highlight
 
@@ -70,5 +73,17 @@ footer {
     font-family: News706 BT; /* Altere a fonte conforme necessário */
     font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
     margin-bottom: 50px;
+}
+
+.highlight {
+    background-image: url(CapaPrincipal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+.container {
+    padding-top: 15px;
+   
 }
 
