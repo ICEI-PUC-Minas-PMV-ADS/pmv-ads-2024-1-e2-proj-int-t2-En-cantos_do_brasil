@@ -1,4 +1,6 @@
-﻿@using System.Security.Claims
+﻿@model Encantos_do_Brasil.Models.Usuario
+@using System.Security.Claims
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +45,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create"> Cadastro</a>
                         </li>
 
+                        <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Details" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)"> Perfil</a>
+                        </li>
+
                     </ul>
                     <ul class="navbar-nav">
 
@@ -56,7 +62,7 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
                             </li>
                         }
                     </ul>

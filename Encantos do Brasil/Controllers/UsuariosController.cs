@@ -77,7 +77,7 @@ namespace Encantos_do_Brasil.Controllers
         {
             await HttpContext.SignOutAsync();
 
-            return RedirectToAction("Login", "Usuarios");
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Usuarios/Details/5
@@ -133,7 +133,7 @@ namespace Encantos_do_Brasil.Controllers
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Login));
             }
             return View(usuario);
         }
@@ -191,7 +191,7 @@ namespace Encantos_do_Brasil.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             return View(usuario);
         }
@@ -240,7 +240,7 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Logout));
         }
 
         private bool UsuarioExists(int id)
