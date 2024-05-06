@@ -48,7 +48,7 @@ namespace Encantos_do_Brasil.Controllers
                     new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
                     new Claim(ClaimTypes.Name, dados.Nome),
                     new Claim(ClaimTypes.Email, dados.Email),
-                    new Claim(ClaimTypes.Role, dados.Perfil.ToString())
+                    new Claim(ClaimTypes.Role, dados.Preferencia.ToString())
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
@@ -126,7 +126,7 @@ namespace Encantos_do_Brasil.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AllowAnonymous]
-        public async Task<IActionResult> Create([Bind("Id,Nome,NomeUsuario,Email,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Preferencia")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -142,38 +142,21 @@ namespace Encantos_do_Brasil.Controllers
         [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (User.FindFirstValue(ClaimTypes.Role) == "Admin")
+            if (id == null || _context.Usuarios == null)
             {
-                if (id == null || _context.Usuarios == null)
-                {
-                    return NotFound();
-                }
-
-                var usuario = await _context.Usuarios.FindAsync(id);
-                if (usuario == null)
-                {
-                    return NotFound();
-                }
-                return View(usuario);
+                return NotFound();
             }
-            else
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
             {
-                if (id == null || _context.Usuarios == null)
-                {
-                    return NotFound();
-                }
-
-                var usuario = await _context.Usuarios.FindAsync(id);
-                if (usuario == null)
-                {
-                    return NotFound();
-                }
-                if (User.FindFirstValue(ClaimTypes.NameIdentifier) != id.ToString())
-                {
-                    return RedirectToAction(nameof(AccessDenied));
-                }
-                return View(usuario);
+                return NotFound();
             }
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != id.ToString())
+            {
+                return RedirectToAction(nameof(AccessDenied));
+            }
+            return View(usuario);
         }
 
         // POST: Usuarios/Edit/5
@@ -182,7 +165,7 @@ namespace Encantos_do_Brasil.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,NomeUsuario,Email,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Preferencia")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -217,46 +200,26 @@ namespace Encantos_do_Brasil.Controllers
         [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
-            // Verifica se o usuário é um administrador
-            if (User.IsInRole("Admin"))
+            // Verifica se o Id do usuário atual é igual ao Id fornecido
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != id.ToString())
             {
-                if (id == null || _context.Usuarios == null)
-                {
-                    return NotFound();
-                }
-
-                var usuario = await _context.Usuarios
-                    .FirstOrDefaultAsync(m => m.Id == id);
-                if (usuario == null)
-                {
-                    return NotFound();
-                }
-
-                return View(usuario);
+                // Redireciona para ação AccessDenied no mesmo controlador
+                return RedirectToAction(nameof(AccessDenied));
             }
-            else
+
+            if (id == null || _context.Usuarios == null)
             {
-                // Verifica se o Id do usuário atual é igual ao Id fornecido
-                if (User.FindFirstValue(ClaimTypes.NameIdentifier) != id.ToString())
-                {
-                    // Redireciona para ação AccessDenied no mesmo controlador
-                    return RedirectToAction(nameof(AccessDenied));
-                }
-
-                if (id == null || _context.Usuarios == null)
-                {
-                    return NotFound();
-                }
-
-                var usuario = await _context.Usuarios
-                    .FirstOrDefaultAsync(m => m.Id == id);
-                if (usuario == null)
-                {
-                    return NotFound();
-                }
-
-                return View(usuario);
+                return NotFound();
             }
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(usuario);
         }
 
 

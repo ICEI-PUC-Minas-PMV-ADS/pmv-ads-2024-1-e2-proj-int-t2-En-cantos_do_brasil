@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Encantos_do_Brasil.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class CidadesController : Controller
     {
         private readonly AppDbContext _context;

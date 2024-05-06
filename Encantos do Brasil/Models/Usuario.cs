@@ -12,9 +12,6 @@ namespace Encantos_do_Brasil.Models
         [Required(ErrorMessage ="Insira seu nome!")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Insira seu nome de usuário!")]
-        public string NomeUsuario { get; set; }
-
         [Required(ErrorMessage = "Insira seu email!")]
         public string Email { get; set; }
 
@@ -22,14 +19,17 @@ namespace Encantos_do_Brasil.Models
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
-        [Required(ErrorMessage ="Obrigatório informar o perfil!")]
-        public Perfil Perfil { get; set; }
-
+        [Display(Name = "Preferência")]
+        [Required(ErrorMessage = "Obrigatório informar a preferência!")]
+        public Pref Preferencia { get; set; }
     }
 
-    public enum Perfil
+    public enum Pref
     {
-        Admin,
-        User
+        DestinosExoticos,
+        AventuraArLivre,
+        PatrimonioCultural,
+        RelaxamentoResorts,
+        TurismoGastronomico
     }
 }
