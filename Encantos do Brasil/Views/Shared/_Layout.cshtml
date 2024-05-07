@@ -1,5 +1,4 @@
-﻿@model Encantos_do_Brasil.Models.Usuario
-@using System.Security.Claims
+﻿@using System.Security.Claims
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +17,7 @@
     <header>
         
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-           
-            <div class="container-fluid">
-               
-              
+                                      
                 <div class="container-fluid">
 
                     <!-- Imagem no lado esquerdo -->
@@ -47,6 +43,10 @@
 
                         <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Details" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)"> Perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Preferencias" asp-action="Index"> Preferencias</a>
                         </li>
 
                     </ul>
