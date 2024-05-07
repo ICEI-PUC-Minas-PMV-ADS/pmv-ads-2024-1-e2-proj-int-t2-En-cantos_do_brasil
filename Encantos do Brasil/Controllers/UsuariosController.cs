@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Encantos_do_Brasil.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -72,16 +73,14 @@ namespace Encantos_do_Brasil.Controllers
             }
         }
 
-        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
 
-            return RedirectToAction("Login", "Usuarios");
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Usuarios/Details/5
-        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             // Verifica se o Id não está presente ou se o contexto de usuários é nulo
@@ -139,7 +138,6 @@ namespace Encantos_do_Brasil.Controllers
         }
 
         // GET: Usuarios/Edit/5
-        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Usuarios == null)
@@ -164,7 +162,6 @@ namespace Encantos_do_Brasil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Preferencia")] Usuario usuario)
         {
             if (id != usuario.Id)
@@ -191,13 +188,12 @@ namespace Encantos_do_Brasil.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             return View(usuario);
         }
 
         // GET: Usuarios/Delete/5
-        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             // Verifica se o Id do usuário atual é igual ao Id fornecido
@@ -226,7 +222,6 @@ namespace Encantos_do_Brasil.Controllers
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Usuarios == null)
@@ -240,7 +235,7 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Logout));
         }
 
         private bool UsuarioExists(int id)

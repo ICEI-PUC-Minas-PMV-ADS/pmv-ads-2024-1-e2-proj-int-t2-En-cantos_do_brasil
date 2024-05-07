@@ -40,7 +40,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdEstado");
 
-                    b.ToTable("Cidades");
+                    b.ToTable("Cidades", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Estado", b =>
@@ -62,7 +62,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdRegiao");
 
-                    b.ToTable("Estados");
+                    b.ToTable("Estados", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Hotel", b =>
@@ -87,7 +87,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("Hoteis");
+                    b.ToTable("Hoteis", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.PontoTuristico", b =>
@@ -112,7 +112,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("PontosTuristicos");
+                    b.ToTable("PontosTuristicos", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Preferencia", b =>
@@ -143,7 +143,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdPontoTuristico");
 
-                    b.ToTable("Preferencias");
+                    b.ToTable("Preferencias", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.RegiaoPais", b =>
@@ -160,7 +160,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("RegioesPais");
+                    b.ToTable("RegioesPais", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.TelefoneHotel", b =>
@@ -182,7 +182,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdHotel");
 
-                    b.ToTable("Telefones");
+                    b.ToTable("Telefones", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Usuario", b =>
@@ -210,7 +210,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Cidade", b =>
