@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Encantos_do_Brasil.Models
 {
-    [Table("Preferencias")]
-    public class Preferencia
+    [Table("Favoritos")]
+    public class Favorito
     {
         [Key]
         public int Id { get; set; }

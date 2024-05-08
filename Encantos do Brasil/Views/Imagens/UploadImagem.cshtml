@@ -1,0 +1,10 @@
+﻿@model Encantos_do_Brasil.Models.Imagem
+
+<form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="arquivo">Selecione uma imagem:</label>
+        <input type="file" name="arquivo" id="arquivo" class="form-control-file" />
+        <span asp-validation-for="Dados" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

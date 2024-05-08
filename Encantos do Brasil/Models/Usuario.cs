@@ -21,10 +21,10 @@ namespace Encantos_do_Brasil.Models
 
         [Display(Name = "Preferência")]
         [Required(ErrorMessage = "Obrigatório informar a preferência!")]
-        public Pref Preferencia { get; set; }
+        public Preferencia Preferencia { get; set; }
     }
 
-    public enum Pref
+    public enum Preferencia
     {
         DestinosExoticos,
         AventuraArLivre,

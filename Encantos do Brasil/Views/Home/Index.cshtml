@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Encantos_do_Brasil.ViewModels.CidadeEstadoViewModel
+
+@{
+    ViewData["Title"] = "Index";
 }
 
 <div class="container" id="menu">
@@ -12,3 +14,14 @@
     </div>
 </div>
 
+<table class="table">
+        @foreach (var cidade in Model.Cidades)
+        {
+            <li><a href="@Url.Action("Details", "Cidades", new { id = cidade.Id })">@cidade.Nome</a></li>
+        }
+
+        @foreach (var estado in Model.Estados)
+        {
+            <li><a href="@Url.Action("Details", "Estados", new { id = estado.Id })">@estado.Nome</a></li>
+        }
+</table>
