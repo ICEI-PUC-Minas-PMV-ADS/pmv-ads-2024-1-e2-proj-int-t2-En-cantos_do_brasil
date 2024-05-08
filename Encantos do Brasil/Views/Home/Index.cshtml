@@ -15,19 +15,13 @@
 </div>
 
 <table class="table">
-    <h1>Cidades</h1>
-    <ul>
         @foreach (var cidade in Model.Cidades)
         {
             <li><a href="@Url.Action("Details", "Cidades", new { id = cidade.Id })">@cidade.Nome</a></li>
         }
-    </ul>
 
-    <h1>Estados</h1>
-    <ul>
         @foreach (var estado in Model.Estados)
         {
             <li><a href="@Url.Action("Details", "Estados", new { id = estado.Id })">@estado.Nome</a></li>
         }
-    </ul>
 </table>
