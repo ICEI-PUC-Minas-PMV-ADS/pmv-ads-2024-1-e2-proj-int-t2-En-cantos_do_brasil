@@ -24,6 +24,6 @@ namespace Encantos_do_Brasil.Models
 
         public ICollection<TelefoneHotel> Telefones { get; set; }
 
-        public ICollection<Preferencia> Preferencias { get; set; }
+        public ICollection<Favorito> Favoritos { get; set; }
     }
 }

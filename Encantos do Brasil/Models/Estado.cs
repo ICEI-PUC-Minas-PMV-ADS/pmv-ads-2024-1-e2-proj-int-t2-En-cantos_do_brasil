@@ -19,6 +19,10 @@ namespace Encantos_do_Brasil.Models
         [ForeignKey("IdRegiao")]
         public RegiaoPais Regiao { get; set; }
 
+        [Display(Name = "Preferência")]
+        [Required(ErrorMessage = "Obrigatório informar a preferência!")]
+        public Preferencia Preferencia { get; set; }
+
         public ICollection<Cidade> Cidades { get; set; }
     }
 }

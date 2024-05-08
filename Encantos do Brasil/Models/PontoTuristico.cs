@@ -22,6 +22,6 @@ namespace Encantos_do_Brasil.Models
         [ForeignKey("IdCidade")]
         public Cidade Cidade { get; set; }
 
-        public ICollection<Preferencia> Preferencias { get; set; }
+        public ICollection<Favorito> Favoritos { get; set; }
     }
 }

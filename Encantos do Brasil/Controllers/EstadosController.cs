@@ -56,7 +56,7 @@ namespace Encantos_do_Brasil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,IdRegiao")] Estado estado)
+        public async Task<IActionResult> Create([Bind("Id,Nome,IdRegiao,Preferencia")] Estado estado)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace Encantos_do_Brasil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,IdRegiao")] Estado estado)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,IdRegiao,Preferencia")] Estado estado)
         {
             if (id != estado.Id)
             {

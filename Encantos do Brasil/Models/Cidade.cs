@@ -19,10 +19,14 @@ namespace Encantos_do_Brasil.Models
         [ForeignKey("IdEstado")]
         public Estado Estado { get; set; }
 
+        [Display(Name = "Preferência")]
+        [Required(ErrorMessage = "Obrigatório informar a preferência!")]
+        public Preferencia Preferencia { get; set; }
+
         public ICollection<Hotel> Hoteis { get; set; }
 
         public ICollection<PontoTuristico> PontosTuristicos { get; set; }
 
-        public ICollection<Preferencia> Preferencias { get; set; }
+        public ICollection<Favorito> Favoritos { get; set; }
     }
 }

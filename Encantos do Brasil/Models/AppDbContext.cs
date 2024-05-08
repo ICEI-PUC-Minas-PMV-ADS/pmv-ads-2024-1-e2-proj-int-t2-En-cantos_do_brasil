@@ -20,6 +20,6 @@ namespace Encantos_do_Brasil.Models
 
         public DbSet<Usuario> Usuarios { get; set; }
 
-        public DbSet<Preferencia> Preferencias { get; set; }
+        public DbSet<Favorito> Favoritos { get; set; }
     }
 }
