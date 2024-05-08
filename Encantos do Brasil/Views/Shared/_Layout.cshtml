@@ -20,7 +20,7 @@
                                       
                 <div class="container-fluid">
 
-                    <!-- Imagem no lado esquerdo -->
+                    <!-- Imagem no lado esquerdo LOGO  --> 
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                         <img src="~/css/logoPrincipal.png" alt="Logo" width="88" height="auto">
                     </a>
@@ -56,7 +56,7 @@
                         {
                             <li class="nav-item">
                                 Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Details" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Perfil</a>
+                           
                             </li>
                         }
                         else

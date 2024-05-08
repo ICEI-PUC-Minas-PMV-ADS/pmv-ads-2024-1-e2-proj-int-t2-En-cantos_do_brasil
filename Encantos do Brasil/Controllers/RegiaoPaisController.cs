@@ -1,6 +1,8 @@
 ﻿using Encantos_do_Brasil.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Encantos_do_Brasil.Controllers
 {
@@ -19,5 +21,30 @@ namespace Encantos_do_Brasil.Controllers
 
             return View(dados);
         }
+
+
+        public IActionResult Create()
+        {
+            
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id, Nome")] RegiaoPais regiaoPais)
+        {
+
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(regiaoPais);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            
+            return View(regiaoPais);
+        }
+
     }
+
 }

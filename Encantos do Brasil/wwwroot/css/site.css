@@ -15,19 +15,6 @@ html {
 
 }
 
-body {
-    margin-bottom: 60px;
-
-}
-
-body {
-    width: auto;
-    height: 800px;
-  
-    background-repeat: no-repeat;
-    background-size: contain;
-
-}
 
 
 footer {
@@ -48,36 +35,32 @@ footer {
     background-color: #ccf1dc;
     left: 0;
     width: 100%;
-    height: 50px; /* Altura inicial da barra */
+    height: 11%; /* Altura inicial da barra */
     text-align: center;
     z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
     overflow: hidden; /* Esconde qualquer conteúdo que possa estender além da altura atual */
     transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
 }
 
-    .container-fluid:hover {
-        height: 100px; /* Altura expandida da barra quando o mouse passa por cima */
-    }
-
-
- .highlight
-
-{
+.highlight {
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Alinha o conteúdo na parte inferior */
     color: #286277;
-    padding-top: 920px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
+    padding-top: 1500px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
     font-family: News706 BT; /* Altere a fonte conforme necessário */
     font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
     margin-bottom: 50px;
-}
+   
 
-.highlight {
+    /*Logo de fundo */
     background-image: url(CapaPrincipal.png);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100%; /* Define a largura do elemento pai como 100% da largura da tela */
 }
 
+#menu{
+    margin: 0px;
+}
