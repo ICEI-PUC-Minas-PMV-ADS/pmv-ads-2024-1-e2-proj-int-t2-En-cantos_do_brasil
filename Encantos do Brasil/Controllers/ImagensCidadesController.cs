@@ -1,14 +1,15 @@
 ﻿using Encantos_do_Brasil.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Encantos_do_Brasil.Controllers
 {
-    public class ImagensController : Controller
+    public class ImagensCidadesController : Controller
     {
         private readonly AppDbContext _context;
 
-        public ImagensController(AppDbContext context)
+        public ImagensCidadesController(AppDbContext context)
         {
             _context = context;
         }
@@ -18,9 +19,9 @@ namespace Encantos_do_Brasil.Controllers
             return View(); 
         }
 
-        public IActionResult ExibirImagem(int id)
+        public async Task<IActionResult> ExibirImagem(int id)
         {
-            var imagem = _context.Imagens.FirstOrDefault(i => i.Id == id);
+            var imagem = await _context.ImagensCidades.FirstOrDefaultAsync(i => i.IdCidade == id);
             if (imagem != null)
             {
                 return File(imagem.Dados, imagem.TipoConteudo);
@@ -28,14 +29,16 @@ namespace Encantos_do_Brasil.Controllers
             return NotFound();
         }
 
+
         public IActionResult UploadImagem()
         {
+            ViewData["IdCidade"] = new SelectList(_context.Cidades, "Id", "Nome");
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UploadImagem(IFormFile arquivo)
+        public async Task<IActionResult> UploadImagem(IFormFile arquivo, int cidadeId)
         {
             if (arquivo == null || arquivo.Length == 0)
             {
@@ -52,14 +55,15 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             // Salva os dados da imagem no banco de dados
-            var imagem = new Imagem
+            var imagem = new ImagemCidade
             {
                 Nome = arquivo.FileName,
                 TipoConteudo = arquivo.ContentType,
-                Dados = dadosImagem
+                Dados = dadosImagem,
+                IdCidade = cidadeId
             };
 
-            _context.Imagens.Add(imagem);
+            _context.ImagensCidades.Add(imagem);
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));

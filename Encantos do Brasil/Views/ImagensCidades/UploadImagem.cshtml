@@ -1,10 +1,16 @@
-﻿@model Encantos_do_Brasil.Models.Imagem
+﻿@model Encantos_do_Brasil.Models.ImagemCidade
 
 <form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="arquivo">Selecione uma imagem:</label>
         <input type="file" name="arquivo" id="arquivo" class="form-control-file" />
         <span asp-validation-for="Dados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="IdCidade">Selecione uma cidade:</label>
+        <select name="cidadeId" id="IdCidade" class="form-control" asp-items="ViewBag.IdCidade">
+        </select>
+        <span asp-validation-for="IdCidade" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

@@ -12,6 +12,7 @@ namespace Encantos_do_Brasil.ViewModels
         }
 
         public List<Cidade> Cidades { get; set; }
+
         public List<Estado> Estados { get; set; }
     }
 }

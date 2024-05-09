@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Encantos_do_Brasil.Models
 {
-    [Table("Imagens")]
-    public class Imagem
+    [Table("ImagensCidades")]
+    public class ImagemCidade
     {
         [Key]
         public int Id { get; set; }
@@ -17,5 +17,12 @@ namespace Encantos_do_Brasil.Models
 
         [Required]
         public string TipoConteudo { get; set; }
+
+        [Display(Name = "Cidade")]
+        [Required(ErrorMessage = "Escolha uma cidade!")]
+        public int IdCidade { get; set; }
+
+        [ForeignKey("IdCidade")]
+        public Cidade Cidade { get; set; }
     }
 }

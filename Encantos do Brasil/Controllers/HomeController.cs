@@ -32,6 +32,7 @@ namespace Encantos_do_Brasil.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 Preferencia preferenciaEnum = (Preferencia)Enum.Parse(typeof(Preferencia), userPref);
+
                 var todasAsCidades = await _context.Cidades.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();
                 var cidadesEmbaralhadas = todasAsCidades.OrderBy(c => random.Next()).ToList();
                 viewModel.Cidades = cidadesEmbaralhadas.Take(y).ToList();
@@ -50,8 +51,10 @@ namespace Encantos_do_Brasil.Controllers
                 var estadosEmbaralhados = todosOsEstados.OrderBy(c => random.Next()).ToList();
                 viewModel.Estados = estadosEmbaralhados.Take(x).ToList();
             }
+
             return View(viewModel);
         }
+
 
 
         public IActionResult Privacy()

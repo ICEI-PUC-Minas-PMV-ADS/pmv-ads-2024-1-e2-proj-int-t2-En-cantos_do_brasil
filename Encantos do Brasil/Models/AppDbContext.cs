@@ -22,6 +22,6 @@ namespace Encantos_do_Brasil.Models
 
         public DbSet<Favorito> Favoritos { get; set; }
 
-        public DbSet<Imagem> Imagens { get; set; }
+        public DbSet<ImagemCidade> ImagensCidades { get; set; }
     }
 }

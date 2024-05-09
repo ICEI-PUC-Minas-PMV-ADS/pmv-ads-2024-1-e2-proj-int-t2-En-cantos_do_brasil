@@ -28,5 +28,7 @@ namespace Encantos_do_Brasil.Models
         public ICollection<PontoTuristico> PontosTuristicos { get; set; }
 
         public ICollection<Favorito> Favoritos { get; set; }
+
+        public ICollection<ImagemCidade> ImagemCidades { get; set; }
     }
 }
