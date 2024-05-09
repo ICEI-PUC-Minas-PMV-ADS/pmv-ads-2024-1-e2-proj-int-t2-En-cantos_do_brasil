@@ -15,7 +15,13 @@ html {
 
 }
 
+body {
+    margin-top: 10vh;
+    /* Define a largura do elemento pai como 100% da largura da tela */
+    
 
+}
+   
 
 footer {
     position: fixed;
@@ -43,24 +49,22 @@ footer {
 }
 
 .highlight {
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Alinha o conteúdo na parte inferior */
-    color: #286277;
-    padding-top: 1500px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
-    font-family: News706 BT; /* Altere a fonte conforme necessário */
-    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
-    margin-bottom: 50px;
-   
-
     /*Logo de fundo */
     background-image: url(CapaPrincipal.png);
     background-repeat: no-repeat;
-    width: 100%; /* Define a largura do elemento pai como 100% da largura da tela */
+    background-size: 100%;
+    text-align:start;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo na parte inferior */
+    color: #ffffff;
+    padding-top: 500px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
+    font-family: News706 BT; /* Altere a fonte conforme necessário */
+    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
 }
 
 #menu{
     margin: 0px;
 }
+
