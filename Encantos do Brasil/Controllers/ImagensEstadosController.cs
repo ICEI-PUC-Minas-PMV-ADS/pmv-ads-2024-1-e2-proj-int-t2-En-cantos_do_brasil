@@ -5,23 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Encantos_do_Brasil.Controllers
 {
-    public class ImagensCidadesController : Controller
+    public class ImagensEstadosController : Controller
     {
         private readonly AppDbContext _context;
 
-        public ImagensCidadesController(AppDbContext context)
+        public ImagensEstadosController(AppDbContext context)
         {
             _context = context;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         public async Task<IActionResult> ExibirImagem(int id)
         {
-            var imagem = await _context.ImagensCidades.FirstOrDefaultAsync(i => i.IdCidade == id);
+            var imagem = await _context.ImagensEstados.FirstOrDefaultAsync(i => i.IdEstado == id);
             if (imagem != null)
             {
                 return File(imagem.Dados, imagem.TipoConteudo);
@@ -32,18 +27,18 @@ namespace Encantos_do_Brasil.Controllers
 
         public IActionResult UploadImagem()
         {
-            ViewData["IdCidade"] = new SelectList(_context.Cidades, "Id", "Nome");
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "Id", "Nome");
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UploadImagem(IFormFile arquivo, int cidadeId, TipoImagem tipoImagem)
+        public async Task<IActionResult> UploadImagem(IFormFile arquivo, int estadoId, TipoImagem tipoImagem)
         {
             if (arquivo == null || arquivo.Length == 0)
             {
                 ModelState.AddModelError("Arquivo", "Por favor, selecione um arquivo para upload.");
-                return RedirectToAction("Index", "Imagens");
+                return RedirectToAction(nameof(Index));
             }
 
             // Lê os dados do arquivo e converte em um array de bytes
@@ -55,19 +50,19 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             // Salva os dados da imagem no banco de dados
-            var imagem = new ImagemCidade
+            var imagem = new ImagemEstado
             {
                 Nome = arquivo.FileName,
                 TipoConteudo = arquivo.ContentType,
                 Dados = dadosImagem,
                 TipoImagem = tipoImagem,
-                IdCidade = cidadeId
+                IdEstado = estadoId
             };
 
-            _context.ImagensCidades.Add(imagem);
+            _context.ImagensEstados.Add(imagem);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "Imagens");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

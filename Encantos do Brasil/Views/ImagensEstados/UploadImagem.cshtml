@@ -1,4 +1,4 @@
-﻿@model Encantos_do_Brasil.Models.ImagemCidade
+﻿@model Encantos_do_Brasil.Models.ImagemEstado
 
 <form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
     <div class="form-group">
@@ -7,10 +7,10 @@
         <span asp-validation-for="Dados" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="IdCidade">Selecione uma cidade:</label>
-        <select name="cidadeId" id="IdCidade" class="form-control" asp-items="ViewBag.IdCidade">
+        <label for="IdEstado">Selecione uma estado:</label>
+        <select name="estadoId" id="IdEstado" class="form-control" asp-items="ViewBag.IdEstado">
         </select>
-        <span asp-validation-for="IdCidade" class="text-danger"></span>
+        <span asp-validation-for="IdEstado" class="text-danger"></span>
     </div>
     <div class="col-md-3">
         <label asp-for="TipoImagem" class="control-label"></label>
@@ -19,3 +19,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+

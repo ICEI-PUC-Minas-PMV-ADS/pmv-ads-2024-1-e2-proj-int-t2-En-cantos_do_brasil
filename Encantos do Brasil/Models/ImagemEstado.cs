@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Encantos_do_Brasil.Models
 {
-    [Table("ImagensCidades")]
-    public class ImagemCidade
+    [Table("ImagensEstados")]
+    public class ImagemEstado
     {
         [Key]
         public int Id { get; set; }
@@ -21,19 +21,11 @@ namespace Encantos_do_Brasil.Models
         [Required]
         public TipoImagem TipoImagem { get; set; }
 
-        [Display(Name = "Cidade")]
-        [Required(ErrorMessage = "Escolha uma cidade!")]
-        public int IdCidade { get; set; }
+        [Display(Name = "Estado")]
+        [Required(ErrorMessage = "Escolha um estado!")]
+        public int IdEstado { get; set; }
 
         [ForeignKey("IdCidade")]
-        public Cidade Cidade { get; set; }
-    }
-
-    public enum TipoImagem
-    {
-        Principal,
-        Banner,
-        Rodape,
-        Padrao
+        public Estado Estado { get; set; }
     }
 }

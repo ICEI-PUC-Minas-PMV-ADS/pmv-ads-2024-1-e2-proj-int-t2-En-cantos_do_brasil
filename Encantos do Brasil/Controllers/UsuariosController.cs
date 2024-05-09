@@ -44,25 +44,7 @@ namespace Encantos_do_Brasil.Controllers
 
             if (senhaOk)
             {
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
-                    new Claim(ClaimTypes.Name, dados.Nome),
-                    new Claim(ClaimTypes.Email, dados.Email),
-                    new Claim(ClaimTypes.Role, dados.Preferencia.ToString())
-                };
-
-                var usuarioIdentity = new ClaimsIdentity(claims, "login");
-                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
-
-                var props = new AuthenticationProperties
-                {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
-                    IsPersistent = true
-                };
-
-                await HttpContext.SignInAsync(principal, props);
+                await AtualizarReivindicacoesUsuario(dados);
 
                 return Redirect("/");
             }
@@ -157,9 +139,6 @@ namespace Encantos_do_Brasil.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Preferencia")] Usuario usuario)
@@ -176,6 +155,8 @@ namespace Encantos_do_Brasil.Controllers
                     usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
+
+                    await AtualizarReivindicacoesUsuario(usuario);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -247,6 +228,29 @@ namespace Encantos_do_Brasil.Controllers
         public IActionResult AccessDenied()
         {
             return View();
+        }
+
+        private async Task AtualizarReivindicacoesUsuario(Usuario usuario)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                new Claim(ClaimTypes.Name, usuario.Nome),
+                new Claim(ClaimTypes.Email, usuario.Email),
+                new Claim(ClaimTypes.Role, usuario.Preferencia.ToString())
+            };
+
+            var usuarioIdentity = new ClaimsIdentity(claims, "login");
+            ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+            var props = new AuthenticationProperties
+            {
+                AllowRefresh = true,
+                ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                IsPersistent = true
+            };
+
+            await HttpContext.SignInAsync(principal, props);
         }
     }
 }

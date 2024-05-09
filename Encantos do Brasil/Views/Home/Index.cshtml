@@ -27,6 +27,11 @@
 
         @foreach (var estado in Model.Estados)
         {
-            <li><a href="@Url.Action("Details", "Estados", new { id = estado.Id })">@estado.Nome</a></li>
+        <li>
+            <a href="@Url.Action("Details", "Estados", new { id = estado.Id })">
+                @estado.Nome
+                <img src="@Url.Action("ExibirImagem", "ImagensEstados", new { id = estado.Id })" alt="Imagem da cidade" />
+            </a>
+        </li>
         }
 </table>
