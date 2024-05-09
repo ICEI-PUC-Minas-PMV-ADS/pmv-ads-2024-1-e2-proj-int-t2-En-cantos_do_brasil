@@ -54,6 +54,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     text-align:start;
+    padding-bottom:unset;
     background-position:center;
     display: flex;
     justify-content: center;
