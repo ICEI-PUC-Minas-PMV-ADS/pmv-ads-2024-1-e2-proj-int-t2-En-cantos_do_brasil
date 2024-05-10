@@ -3,12 +3,14 @@
 @{
     ViewData["Title"] = "Login";
 }
+<div class="background">
+
 
 <h1>Login</h1>
 
 <h4>Usuario</h4>
 <hr />
-<div class="row">
+<div class="row-2">
     <div class="col-md-4">
         <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -22,13 +24,21 @@
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
+           
             </br>
+           
             <div class="form-group">
+               
                 <button type="submit" class="btn btn-primary mb-2">Entrar</button>
+                
             </div>
+            
         </form>
+       
         <h3>@ViewBag.Message</h3>
+      
     </div>
+  
 </div>
 
 <div>
@@ -36,5 +46,9 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+       
+    }
 }
+

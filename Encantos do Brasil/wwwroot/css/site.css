@@ -1,5 +1,6 @@
 html {
     font-size: 14px;
+    
 }
 
 @media (min-width: 768px) {
@@ -10,18 +11,18 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 120%;
+   
 
 }
 
 body {
-    margin-top: 10vh;
-    /* Define a largura do elemento pai como 100% da largura da tela */
-    
-
-}
+   margin-top:10vh;
    
+    /* Define a largura do elemento pai como 100% da largura da tela */
+}
+
 
 footer {
     position: fixed;
@@ -37,8 +38,7 @@ footer {
 
 .container-fluid {
     position: fixed;
-    top: 0;
-    border-color: white;
+    top:0;
     background-color: #ccf1dc;
     left: 0;
     width: 100%;
@@ -51,12 +51,7 @@ footer {
 
 .highlight {
     /*Logo de fundo */
-    background-image: url(CapaPrincipal.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-align:start;
-    padding-bottom:unset;
-    background-position:center;
+    text-align: start;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo na parte inferior */
@@ -64,6 +59,7 @@ footer {
     padding-top: 850px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
     font-family: News706 BT; /* Altere a fonte conforme necessário */
     font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+   
 }
 
 #menu{
