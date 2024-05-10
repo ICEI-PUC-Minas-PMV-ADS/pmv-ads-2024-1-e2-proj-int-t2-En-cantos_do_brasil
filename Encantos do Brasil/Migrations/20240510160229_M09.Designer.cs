@@ -4,6 +4,7 @@ using Encantos_do_Brasil.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Encantos_do_Brasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240510160229_M09")]
+    partial class M09
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdEstado");
 
-                    b.ToTable("Cidades", (string)null);
+                    b.ToTable("Cidades");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Estado", b =>
@@ -69,7 +71,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdRegiao");
 
-                    b.ToTable("Estados", (string)null);
+                    b.ToTable("Estados");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Favorito", b =>
@@ -100,7 +102,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdPontoTuristico");
 
-                    b.ToTable("Favoritos", (string)null);
+                    b.ToTable("Favoritos");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Hotel", b =>
@@ -125,7 +127,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("Hoteis", (string)null);
+                    b.ToTable("Hoteis");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.ImagemCidade", b =>
@@ -158,7 +160,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("ImagensCidades", (string)null);
+                    b.ToTable("ImagensCidades");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.ImagemEstado", b =>
@@ -194,7 +196,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("ImagensEstados", (string)null);
+                    b.ToTable("ImagensEstados");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.PontoTuristico", b =>
@@ -219,7 +221,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("PontosTuristicos", (string)null);
+                    b.ToTable("PontosTuristicos");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.RegiaoPais", b =>
@@ -236,7 +238,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("RegioesPais", (string)null);
+                    b.ToTable("RegioesPais");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.TelefoneHotel", b =>
@@ -258,7 +260,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdHotel");
 
-                    b.ToTable("Telefones", (string)null);
+                    b.ToTable("Telefones");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.TextoCidade", b =>
@@ -287,7 +289,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdCidade");
 
-                    b.ToTable("TextosCidades", (string)null);
+                    b.ToTable("TextosCidades");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.TextoEstado", b =>
@@ -316,7 +318,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasIndex("IdEstado");
 
-                    b.ToTable("TextosEstados", (string)null);
+                    b.ToTable("TextosEstados");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Usuario", b =>
@@ -344,7 +346,7 @@ namespace Encantos_do_Brasil.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("Encantos_do_Brasil.Models.Cidade", b =>

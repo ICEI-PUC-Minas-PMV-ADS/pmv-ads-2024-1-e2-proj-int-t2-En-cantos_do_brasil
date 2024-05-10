@@ -1,5 +1,9 @@
 ﻿@model Encantos_do_Brasil.Models.ImagemCidade
 
+@{
+    ViewData["Title"] = "UploadImagem";
+}
+
 <form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="arquivo">Selecione uma imagem:</label>

@@ -20,7 +20,7 @@
             <a href="@Url.Action("Details", "Cidades", new { id = cidade.Id })">
                 <div class="polaroid">
                     <div class="imagem">
-                        <img src="@Url.Action("ExibirImagem", "ImagensCidades", new { id = cidade.Id })" alt="Imagem da cidade" />
+                        <img src="@Url.Action("ExibirImagem", "ImagensCidades", new { id = cidade.Id, tipoImagem = "Principal" })" alt="Imagem da cidade" />
                     </div>
                     <div class="texto">
                         @cidade.Nome
@@ -36,7 +36,7 @@
             <a href="@Url.Action("Details", "Estados", new { id = estado.Id })">
                 <div class="polaroid">
                     <div class="imagem">
-                        <img src="@Url.Action("ExibirImagem", "ImagensEstados", new { id = estado.Id })" alt="Imagem do estado" />
+                        <img src="@Url.Action("ExibirImagem", "ImagensEstados", new { id = estado.Id, tipoImagem = "Principal" })" alt="Imagem do estado" />
                     </div>
                     <div class="texto">
                         @estado.Nome

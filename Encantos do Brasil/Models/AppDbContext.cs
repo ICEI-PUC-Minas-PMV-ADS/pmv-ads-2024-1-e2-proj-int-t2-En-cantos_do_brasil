@@ -25,5 +25,9 @@ namespace Encantos_do_Brasil.Models
         public DbSet<ImagemCidade> ImagensCidades { get; set; }
 
         public DbSet<ImagemEstado> ImagensEstados { get; set; }
+
+        public DbSet<TextoCidade> TextoCidades { get; set; }
+
+        public DbSet<TextoEstado> TextoEstados { get; set; }
     }
 }
