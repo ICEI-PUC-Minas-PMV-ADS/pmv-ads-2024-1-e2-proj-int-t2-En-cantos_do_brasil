@@ -13,25 +13,36 @@
         </div>
     </div>
 </div>
-
-<table class="table">
-        @foreach (var cidade in Model.Cidades)
-        {
-            <li>
-                <a href="@Url.Action("Details", "Cidades", new { id = cidade.Id })">
-                    @cidade.Nome
-                <img src="@Url.Action("ExibirImagem", "ImagensCidades", new { id = cidade.Id })" alt="Imagem da cidade" />
-                </a>
-            </li>
-        }
-
-        @foreach (var estado in Model.Estados)
-        {
-        <li>
-            <a href="@Url.Action("Details", "Estados", new { id = estado.Id })">
-                @estado.Nome
-                <img src="@Url.Action("ExibirImagem", "ImagensEstados", new { id = estado.Id })" alt="Imagem da cidade" />
+<div class="container">
+    @foreach (var cidade in Model.Cidades)
+    {
+        <div class="item">
+            <a href="@Url.Action("Details", "Cidades", new { id = cidade.Id })">
+                <div class="polaroid">
+                    <div class="imagem">
+                        <img src="@Url.Action("ExibirImagem", "ImagensCidades", new { id = cidade.Id })" alt="Imagem da cidade" />
+                    </div>
+                    <div class="texto">
+                        @cidade.Nome
+                    </div>
+                </div>
             </a>
-        </li>
-        }
-</table>
+        </div>
+    }
+
+    @foreach (var estado in Model.Estados)
+    {
+        <div class="item">
+            <a href="@Url.Action("Details", "Estados", new { id = estado.Id })">
+                <div class="polaroid">
+                    <div class="imagem">
+                        <img src="@Url.Action("ExibirImagem", "ImagensEstados", new { id = estado.Id })" alt="Imagem do estado" />
+                    </div>
+                    <div class="texto">
+                        @estado.Nome
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
