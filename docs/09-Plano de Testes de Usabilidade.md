@@ -28,8 +28,6 @@ Teste Remoto não moderado
 | RNF-03  | Avalie a facilidade de adicionar pontos turísticos à lista de preferências do usuário.                    | ALTA       |
 | RNF-04  | Certifique-se de que o sistema permite visualizar e gerenciar as listas de preferências do usuário.        | ALTA       |
 | RNF-05  | Verifique se há opções para classificar e filtrar os pontos turísticos de acordo com diferentes critérios. | MÉDIA      |
-| RNF-06  | Teste a funcionalidade de compartilhamento das listas de preferências com outras pessoas.                 | MÉDIA      |
-| RNF-07  | Avalie a performance do sistema ao carregar e exibir informações sobre os pontos turísticos.              | BAIXA      |
 
 
 **Prioridade: Alta / Média / Baixa. 
