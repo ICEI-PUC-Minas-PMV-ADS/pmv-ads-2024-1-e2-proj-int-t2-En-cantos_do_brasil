@@ -42,7 +42,7 @@
 
 | **Caso de Teste** 	| **CT-06 – Adicionar Destinos aos Favoritos** 	|
 |:---:	|:---:	|
-| Requisito Associado | RF-08 - A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. |
+| Requisito Associado | RF-06 - A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. |
 | Objetivo do Teste | Verificar se os usuários podem adicionar destinos à lista de favoritos. |
 | Passos | Acessar o navegador - Informar o endereço do site - Pesquisar e selecionar um destino específico - Clicar no botão "Favoritos" ou "Adicionar aos Favoritos" - Confirmar a adição do destino aos favoritos |
 | Critério de Êxito | -O destino é adicionado com sucesso à lista de favoritos do usuário. |
