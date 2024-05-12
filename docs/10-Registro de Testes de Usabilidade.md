@@ -28,10 +28,7 @@ Os resultados dos testes de Usabilidade realizados na aplicação são descritos
 | Teste executado com sucesso|![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/docs/img/TeladeFavoritos.jpeg?raw=true)
 | Responsável pela execução do caso de Teste | Ettore Mota |
 
-|Caso de Teste    | CT-05 – Filtros de pontos turisticos|
-|:---|:---|
-| Teste executado com sucesso|![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/blob/main/docs/img/TeladeFavoritos.jpeg?raw=true)
-| Responsável pela execução do caso de Teste | Ettore Mota |
+
 
 
 
