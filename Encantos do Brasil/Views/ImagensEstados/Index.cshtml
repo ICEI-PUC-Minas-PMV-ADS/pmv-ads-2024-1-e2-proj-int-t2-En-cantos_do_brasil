@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Encantos_do_Brasil.Models.ImagemCidade>
+﻿@model IEnumerable<Encantos_do_Brasil.Models.ImagemEstado>
 
 @{
     ViewData["Title"] = "Index";
@@ -23,7 +23,7 @@
                 @Html.DisplayNameFor(model => model.TipoImagem)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cidade)
+                @Html.DisplayNameFor(model => model.IdEstado)
             </th>
             <th></th>
         </tr>
@@ -31,8 +31,7 @@
     <tbody>
         @if (Model != null)
         {
-            @foreach (var item in Model)
-            {
+            @foreach (var item in Model) {
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.Nome)
@@ -44,7 +43,7 @@
                         @Html.DisplayFor(modelItem => item.TipoImagem)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Cidade.Nome)
+                        @Html.DisplayFor(modelItem => item.IdEstado)
                     </td>
                     <td>
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>

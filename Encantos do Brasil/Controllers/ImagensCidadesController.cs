@@ -1,7 +1,12 @@
-﻿using Encantos_do_Brasil.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Encantos_do_Brasil.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Encantos_do_Brasil.Controllers
 {
@@ -19,9 +24,10 @@ namespace Encantos_do_Brasil.Controllers
             return View();
         }
 
-        public async Task<IActionResult> ExibirImagem(int id)
+        public async Task<IActionResult> ExibirImagem(int id, TipoImagem tipoImagem)
         {
-            var imagem = await _context.ImagensCidades.FirstOrDefaultAsync(i => i.IdCidade == id);
+            var imagem = await _context.ImagensCidades
+    .FirstOrDefaultAsync(i => i.IdCidade == id && i.TipoImagem == tipoImagem);
             if (imagem != null)
             {
                 return File(imagem.Dados, imagem.TipoConteudo);
@@ -63,11 +69,48 @@ namespace Encantos_do_Brasil.Controllers
                 TipoImagem = tipoImagem,
                 IdCidade = cidadeId
             };
+            if (ModelState.IsValid)
+            {
+                _context.ImagensCidades.Add(imagem);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "ImagensCidades");
+            }
+            ViewData["IdCidade"] = new SelectList(_context.Cidades, "Id", "Nome");
+            return View(imagem);
+        }
 
-            _context.ImagensCidades.Add(imagem);
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.ImagensCidades == null)
+            {
+                return NotFound();
+            }
+
+            var imagem = await _context.ImagensCidades
+                .Include(i => i.Cidade)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (imagem == null)
+            {
+                return NotFound();
+            }
+
+            return View(imagem);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var imagem = await _context.ImagensCidades.FindAsync(id);
+            if (imagem == null)
+            {
+                return NotFound();
+            }
+
+            _context.ImagensCidades.Remove(imagem);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "Imagens");
+            return RedirectToAction("Index", "ImagensCidades");
         }
     }
 }

@@ -34,6 +34,11 @@ namespace Encantos_do_Brasil.Models
         Principal,
         Banner,
         Rodape,
-        Padrao
+        Img1,
+        Img2,
+        Img3,
+        Img4,
+        Img5,
+        Img6
     }
 }
