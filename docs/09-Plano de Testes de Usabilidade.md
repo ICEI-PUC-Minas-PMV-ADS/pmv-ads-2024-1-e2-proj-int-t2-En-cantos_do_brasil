@@ -8,9 +8,7 @@ Teste Remoto não moderado
 
 #### Critério de escolha dos participantes 
 • Uma pessoa que precise encontrar informações detalhadas sobre pontos turísticos, trilhas e aventuras locais.
-
-• Um Turista que precisa encontrar informações relevantes para aproveitar ao máximo sua viagem internacional com segurança e facilidade.
-   
+ 
 #### Objetivo do teste
 • Aquisição de informações: obter dados de natureza quantitativa e qualitativa durante o teste, incluindo o tempo que os participantes levarão para concluir as tarefas, erros cometidos e feedback sobre a experiência de uso.
 
@@ -22,16 +20,18 @@ Teste Remoto não moderado
 
 
 #### Teste de Usabilidade para o perfil Usuário
-• Verificar se os usuários conseguem se cadastrar facilmente.
 
-• Verificar se após o cadastro, os usuários conseguem Logar com facilidade à plataforma.
+| ID      | Descrição                                                  | Prioridade |
+|---------|------------------------------------------------------------|------------|
+| RNF-01  | Verifique se os pontos turísticos são apresentados de forma clara e organizada na interface do sistema. | ALTA       |
+| RNF-02  | Teste a funcionalidade de pesquisa para encontrar pontos turísticos por nome ou categoria.   | ALTA       |
+| RNF-03  | Avalie a facilidade de adicionar pontos turísticos à lista de preferências do usuário.                    | ALTA       |
+| RNF-04  | Certifique-se de que o sistema permite visualizar e gerenciar as listas de preferências do usuário.        | ALTA       |
+| RNF-05  | Verifique se há opções para classificar e filtrar os pontos turísticos de acordo com diferentes critérios. | MÉDIA      |
+| RNF-06  | Teste a funcionalidade de compartilhamento das listas de preferências com outras pessoas.                 | MÉDIA      |
+| RNF-07  | Avalie a performance do sistema ao carregar e exibir informações sobre os pontos turísticos.              | BAIXA      |
 
-• Verificar o Nivel de Satisfação  do Usuário quanto á interface (Se é de fácil entendemento, agradável, etc. )
 
-• Verificar se o Usuário está satisfeito com a Barra de pesquisa, Se os resultados condizem com a sua pesquisa.
-
-• Verificar se o Usuário está satisfeito quanto as informações sobre o destino.
-
-• Verificar satisfação  do Usuário quanto a lista de favoritos.
+**Prioridade: Alta / Média / Baixa. 
 
 
