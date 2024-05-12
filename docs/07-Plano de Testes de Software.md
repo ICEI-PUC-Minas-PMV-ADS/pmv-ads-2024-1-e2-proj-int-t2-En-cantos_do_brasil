@@ -40,23 +40,7 @@
 | Critério de Êxito | -O roteiro personalizado corresponde às preferências indicadas pelo usuário. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-06 - Avaliações e Comentários** 	|
-|:---:	|:---:	|
-| Requisito Associado | RF-06 - Os usuários devem ser capazes de deixar avaliações e comentários sobre os destinos. |
-| Objetivo do Teste | Verificar se os usuários podem deixar avaliações e comentários sobre os destinos. |
-| Passos | Acessar o navegador - Informar o endereço do site - Selecionar um destino específico - Clicar no botão "Avaliar" ou "Comentar" - Preencher o formulário de avaliação/comentário, incluindo a nota e o texto da avaliação/comentário - Clicar em "Enviar". |
-| Critério de Êxito | - A avaliação e o comentário são registrados e exibidos corretamente para o destino selecionado. |
-|  	|  	|
-
-| **Caso de Teste** 	| **CT-07 – Página de Reserva e Consulta** 	|
-|:---:	|:---:	|
-| Requisito Associado | RF-07 - O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc. |
-| Objetivo do Teste | Verificar se o sistema direciona corretamente o usuário para a página de reserva e consulta. |
-| Passos | Acessar o navegador - Informar o endereço do site - Selecionar um destino específico - Clicar na guia "Reservas" ou "Consultas" - Selecionar o tipo de serviço desejado (hospedagem, atividade turística, etc.) - Preencher os filtros de pesquisa (data, número de pessoas, etc.) - Clicar em "Pesquisar". |
-| Critério de Êxito | -O sistema direciona corretamente o usuário para a página de reserva e consulta desejada. |
-|  	|  	|
-
-| **Caso de Teste** 	| **CT-08 – Adicionar Destinos aos Favoritos** 	|
+| **Caso de Teste** 	| **CT-06 – Adicionar Destinos aos Favoritos** 	|
 |:---:	|:---:	|
 | Requisito Associado | RF-08 - A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. |
 | Objetivo do Teste | Verificar se os usuários podem adicionar destinos à lista de favoritos. |
