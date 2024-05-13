@@ -26,12 +26,13 @@ namespace Encantos_do_Brasil.Controllers
 
         public async Task<IActionResult> ExibirImagem(int id, TipoImagem tipoImagem)
         {
-            var imagem = await _context.ImagensCidades
-    .FirstOrDefaultAsync(i => i.IdCidade == id && i.TipoImagem == tipoImagem);
+            var imagem = await _context.ImagensCidades.FirstOrDefaultAsync(i => i.IdCidade == id && i.TipoImagem == tipoImagem);
+
             if (imagem != null)
             {
                 return File(imagem.Dados, imagem.TipoConteudo);
             }
+
             return NotFound();
         }
 

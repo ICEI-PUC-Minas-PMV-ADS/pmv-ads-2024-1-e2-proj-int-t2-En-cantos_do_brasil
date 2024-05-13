@@ -3,16 +3,15 @@ using System.Collections.Generic;
 
 namespace Encantos_do_Brasil.ViewModels
 {
-    public class CidadeEstadoViewModel
+    public class CidadeEstadoViewModel 
     {
         public CidadeEstadoViewModel()
         {
-            Cidades = new List<Cidade>();
-            Estados = new List<Estado>();
+            ImagemEstados = new List<ImagemEstado>();
+            ImagemCidades = new List<ImagemCidade>();
         }
 
-        public List<Cidade> Cidades { get; set; }
-
-        public List<Estado> Estados { get; set; }
+        public List<ImagemEstado> ImagemEstados { get; set; }
+        public List<ImagemCidade> ImagemCidades { get; set; }
     }
 }

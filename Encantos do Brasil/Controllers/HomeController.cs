@@ -20,36 +20,64 @@ namespace Encantos_do_Brasil.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(int? id)
         {
             var viewModel = new CidadeEstadoViewModel();
             var userPref = User.FindFirstValue(ClaimTypes.Role);
 
-            Random random = new Random();
-            int x = random.Next(0, 4);
-            int y = 12 - x;
+            //Random random = new Random();
+            //int x = random.Next(0, 4);
+            //int y = 12 - x;
 
             if (User.Identity.IsAuthenticated)
             {
+
                 Preferencia preferenciaEnum = (Preferencia)Enum.Parse(typeof(Preferencia), userPref);
 
-                var todasAsCidades = await _context.Cidades.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();
-                var cidadesEmbaralhadas = todasAsCidades.OrderBy(c => random.Next()).ToList();
-                viewModel.Cidades = cidadesEmbaralhadas.Take(y).ToList();
+                List<RegiaoPais> cidadesEstados;
 
-                var todosOsEstados = await _context.Estados.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();
-                var estadosEmbaralhados = todosOsEstados.OrderBy(c => random.Next()).ToList();
-                viewModel.Estados = estadosEmbaralhados.Take(x).ToList();
+                if (id == null)
+                {
+                    cidadesEstados = _context.RegioesPais.Include(r => r.Estados)
+                                                            .ThenInclude(i => i.Cidades)
+                                                                .ThenInclude(i => i.ImagensCidades)
+                                                            .Include(r => r.Estados)
+                                                                .ThenInclude(i => i.ImagensEstados)
+                                                            .Where(w => w.Estados.Any(a => a.Preferencia == preferenciaEnum))
+                                                            .ToList();
+                }
+                else
+                {
+                    cidadesEstados = _context.RegioesPais.Include(r => r.Estados)
+                                                            .ThenInclude(i => i.Cidades)
+                                                                .ThenInclude(i => i.ImagensCidades)
+                                                            .Include(r => r.Estados)
+                                                                .ThenInclude(i => i.ImagensEstados)
+                                                            .Where(w => w.Id == id)
+                                                            .ToList();
+                }
+
+                viewModel.ImagemEstados = cidadesEstados.SelectMany(s => s.Estados.SelectMany(s => s.ImagensEstados)).ToList();
+                viewModel.ImagemCidades = cidadesEstados.SelectMany(s => s.Estados.SelectMany(s => s.Cidades.SelectMany(sm=>sm.ImagensCidades))).ToList();
+
+                //var todasAsCidades = await _context.Cidades.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();
+                //var cidadesEmbaralhadas = todasAsCidades.OrderBy(c => random.Next()).ToList();
+                //viewModel.Cidades = cidadesEmbaralhadas.Take(y).ToList();
+
+                //var todosOsEstados = await _context.Estados.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();
+                //var estadosEmbaralhados = todosOsEstados.OrderBy(c => random.Next()).ToList();
+                //viewModel.Estados = estadosEmbaralhados.Take(x).ToList();
             }
             else
             {
-                var todasAsCidades = await _context.Cidades.ToListAsync();
-                var cidadesEmbaralhadas = todasAsCidades.OrderBy(c => random.Next()).ToList();
-                viewModel.Cidades = cidadesEmbaralhadas.Take(y).ToList();
+                //var todasAsCidades = await _context.Cidades.ToListAsync();
+                //var cidadesEmbaralhadas = todasAsCidades.OrderBy(c => random.Next()).ToList();
+                //viewModel.Cidades = cidadesEmbaralhadas.Take(y).ToList();
 
-                var todosOsEstados = await _context.Estados.ToListAsync();
-                var estadosEmbaralhados = todosOsEstados.OrderBy(c => random.Next()).ToList();
-                viewModel.Estados = estadosEmbaralhados.Take(x).ToList();
+                //var todosOsEstados = await _context.Estados.ToListAsync();
+                //var estadosEmbaralhados = todosOsEstados.OrderBy(c => random.Next()).ToList();
+                //viewModel.Estados = estadosEmbaralhados.Take(x).ToList();
             }
 
             return View(viewModel);
@@ -66,6 +94,25 @@ namespace Encantos_do_Brasil.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult FazerPesquisa(string pesquisa)
+        {
+            if (!string.IsNullOrEmpty(pesquisa))
+            {
+
+                var regiao = _context.RegioesPais.Where(w => w.Nome.Contains(pesquisa)).FirstOrDefault();
+
+                return RedirectToAction("Index", new { id = regiao.Id });
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        public List<string> SugestaoDePesquisa(string pesquisa)
+        {
+            var regioes = _context.RegioesPais.Where(w => w.Nome.Contains(pesquisa)).Select(s => s.Nome).ToList();
+            return regioes;
         }
     }
 }
