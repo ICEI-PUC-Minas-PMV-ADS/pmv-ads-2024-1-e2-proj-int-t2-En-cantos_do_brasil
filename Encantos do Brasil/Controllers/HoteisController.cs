@@ -18,7 +18,7 @@ namespace Encantos_do_Brasil.Controllers
             _context = context;
         }
 
-        // GET: Hoteis
+        // GET: Hoteis 
         public async Task<IActionResult> Index()
         {
             var appDbContext = _context.Hoteis.Include(h => h.Cidade);
