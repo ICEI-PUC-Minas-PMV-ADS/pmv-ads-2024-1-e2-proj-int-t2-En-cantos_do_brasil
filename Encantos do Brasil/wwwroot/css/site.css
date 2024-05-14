@@ -44,6 +44,17 @@ header {
     transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
 }
 
+.col-md-12.p-3 {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo na parte inferior */
+    color: #07555f;
+    padding-top: 850px; /* Ajuste o valor conforme necessário para mover o texto para baixo */
+    font-family: News706 BT; /* Altere a fonte conforme necessário */
+    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+}
+
 .imagem_fundo {
     max-width: 100%;
 }
