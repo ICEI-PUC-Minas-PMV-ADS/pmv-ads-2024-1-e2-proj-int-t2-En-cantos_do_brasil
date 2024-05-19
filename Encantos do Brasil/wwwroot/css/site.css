@@ -1,6 +1,3 @@
-html {
-    font-size: 14px;
-}
 
 @media (min-width: 768px) {
     html {
@@ -17,6 +14,9 @@ body {
     margin-top: 10vh;
     /* Define a largura do elemento pai como 100% da largura da tela */
 }
+header {
+    margin-bottom: 20px; /* Margem na parte inferior do cabeçalho */
+}
 
 
 footer {
@@ -25,15 +25,18 @@ footer {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: white; /* Cor de fundo do rodapé */
+    background-color: #fff; /* Cor de fundo do rodapé */
     text-align: center;
     padding: 10px 0; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem na parte inferior do cabeçalho */
 }
+
+
 
 header {
     position: fixed;
     top: 0;
-    background-color: #ccf1dc;
+    background-color: #C7E7E4;
     left: 0;
     width: 100%;
     height: 11%;
@@ -112,3 +115,5 @@ header {
     text-align: center; /* Centraliza o texto */
     margin-top: 15px; /* Adiciona um espaçamento de 10 pixels na parte superior do texto */
 }
+
+
