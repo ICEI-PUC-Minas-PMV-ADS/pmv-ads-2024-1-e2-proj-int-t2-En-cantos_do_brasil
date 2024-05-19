@@ -32,18 +32,18 @@
     <header>
         <div class="container">
 
-            <div class="row">
+            <div class="row ">
 
 
                 <nav class="navbar navbar-expand-lg navbar-light">
 
 
-                    <div class="container-fluid col-md-1">
-                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                   @* <div class="container-fluid col-md-1">
+                       <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                             <img src="~/css/logoPrincipal.png" alt="Logo" width="88" height="auto">
                         </a>
-                    </div>
-
+                    </div>*@
+@*
                     <div class="container-fluid col-md-9">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -75,12 +75,14 @@
                                     <a class="nav-link text-dark" asp-area="" asp-controller="ImagensCidades" asp-action="Index"> Imagens</a>
                                 </li>
                             </ul>
-                            <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" name="pesquisa" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
+                           
+                        </div>*@
+                          
+                    
+            <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex " role="search">
+                <input class="form-control me-2 rounded-pill " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
+
+            </form>
 
                     <div class="container-fluid col-md-2">
                         <ul class="navbar-nav">
@@ -113,7 +115,17 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            <a>"O mundo é um livro, e quem não viaja lê apenas uma página." - Santo Agostinho</a>
+           <h6>
+               Contato
+           </h6>
+        </div>
+        <div>
+           <h6>
+               Redes Sociais 
+
+           </h6> <h6>
+               Curta nossa Página no Facebook e nos siga nas Redes Sociais 
+           </h6>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

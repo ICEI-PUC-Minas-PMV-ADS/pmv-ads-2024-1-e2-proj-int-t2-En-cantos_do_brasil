@@ -3977,8 +3977,9 @@ textarea.form-control-lg {
 .navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  
 }
 .navbar-brand {
   padding-top: 0.3125rem;
