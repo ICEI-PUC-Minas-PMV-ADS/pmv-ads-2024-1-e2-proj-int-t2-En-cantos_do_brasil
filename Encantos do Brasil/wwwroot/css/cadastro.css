@@ -1,0 +1,63 @@
+﻿.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.rectangle {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: #B3BBBB;
+    border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 30px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 0; /* Mantém o canto inferior esquerdo reto */
+    border-bottom-right-radius: 0; /* Mantém o canto inferior direito reto */
+    margin-right: 65px; /* Ajuste o valor conforme necessário para mover mais para a direita */
+}
+
+.circle {
+    position: absolute;
+    top: -100px; /* Ajusta a posição vertical do círculo */
+    left: 50%; /* Centraliza horizontalmente o círculo */
+    transform: translateX(-50%); /* Centraliza horizontalmente o círculo */
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 165px;
+    height: 140px;
+}
+
+.registration-form {
+    width: 300px; /* Ajuste conforme necessário */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial Rounded MT';
+    color: white;
+    font-size: 30px;
+    white-space: nowrap; /* Impede a quebra de linha */
+}
