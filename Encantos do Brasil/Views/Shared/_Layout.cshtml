@@ -77,41 +77,69 @@
                             </ul>
                            
                         </div>*@
+
+                    <nav class="navbar navbar-expand-lg navbar-light  bg-white">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item ml-auto">
+                                   <h4> Melhores Destinos</h4>
+                                </li>
+                                <li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color:black; ">Estados</a>
+                                </li>
+                                <li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color:black; ">Cidades</a>
+                                </li><li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color: black ; ">Regiões</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex " role="search">
+                            <input class="form-control me-2 rounded-pill  " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
+
+                        </form>
+                    </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
                           
-                    
-            <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex " role="search">
-                <input class="form-control me-2 rounded-pill " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
-
-            </form>
-
-                    <div class="container-fluid col-md-2">
-                        <ul class="navbar-nav">
-
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item">
-                                    Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
-                                </li>
-                            }
-                        </ul>
-                    </div>
+          @*@*          
+          
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
+                            </li>
+                        }
+                    </ul>
+*@
+                   
                 </nav>
 
             </div>
         </div>
     </header>
+    <body>
+     
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-8 ">
             @RenderBody()
         </main>
     </div>
+     </body>
 
     <footer class="border-top footer text-muted">
        <h4>Contato</h4>
