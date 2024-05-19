@@ -34,18 +34,18 @@
     <header>
         <div class="container">
 
-            <div class="row">
+            <div class="row ">
 
 
                 <nav class="navbar navbar-expand-lg navbar-light">
 
 
-                    <div class="container-fluid col-md-1">
-                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                   @* <div class="container-fluid col-md-1">
+                       <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                             <img src="~/css/logoPrincipal.png" alt="Logo" width="88" height="auto">
                         </a>
-                    </div>
-
+                    </div>*@
+@*
                     <div class="container-fluid col-md-9">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -77,46 +77,75 @@
                                     <a class="nav-link text-dark" asp-area="" asp-controller="ImagensCidades" asp-action="Index"> Imagens</a>
                                 </li>
                             </ul>
-                            <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" name="pesquisa" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
+                           
+                        </div>*@
+
+                    <nav class="navbar navbar-expand-lg navbar-light  bg-white">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item ml-auto">
+                                   <h4> Melhores Destinos</h4>
+                                </li>
+                                <li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color:black; ">Estados</a>
+                                </li>
+                                <li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color:black; ">Cidades</a>
+                                </li><li class="nav-item ml-auto">
+                                    <a class="nav-link" href="" style="color: black ; ">Regiões</a>
+                                </li>
+                            </ul>
+
                         </div>
-                    </div>
+                        <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex " role="search">
+                            <input class="form-control me-2 rounded-pill  " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
 
-                    <div class="container-fluid col-md-2">
-                        <ul class="navbar-nav">
+                        </form>
+                    </nav>
+    </header>
 
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item">
-                                    Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
-                                </li>
-                            }
-                        </ul>
-                    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+                          
+          @*@*          
+          
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
+                            </li>
+                        }
+                    </ul>
+*@
+                   
                 </nav>
 
             </div>
         </div>
     </header>
+    <body>
+     
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-8 ">
             @RenderBody()
         </main>
     </div>
+     </body>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            <a>"O mundo é um livro, e quem não viaja lê apenas uma página." - Santo Agostinho</a>
-        </div>
+       <h4>Contato</h4>
+       <h5>E-mail: contao@encantos_brasil.com.br </h5>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -4,21 +4,18 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="container">
 
-    <img src="~/css/fotodefundo.png" alt="background" class="imagem_fundo">
-</div>
+    <img src="~/css/CapaPrincipal.png" alt="background" class="imagem_fundo">
 
 
-<div class="container" id="menu">
-    <div class="row">
+
         <div class="col-md-12 p-3">
             <section >                
                 <h1>Melhores Destinos</h1>
             </section>
         </div>
-    </div>
-</div>
+   
+
 
 
 <div class="container d-flex justify-content-center gap-4">
@@ -37,7 +34,7 @@
             </a>
         </div> *@
         <div class="card" style="width: 18rem;">
-            <img src="data:image/jpeg;base64,@Convert.ToBase64String(cidade.Dados)" alt="Imagem do Estado" class="card-img-top">
+            <img src="data:imagem/jpeg;base64,@Convert.ToBase64String(cidade.Dados)" alt="Imagem do Estado" class="card-img-top">
         </div>
     }
 
