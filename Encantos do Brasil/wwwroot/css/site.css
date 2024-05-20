@@ -16,3 +16,17 @@ body {
 }
 
 
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #C7E7E4;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    /* Altura inicial da barra */
+    text-align: center;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    overflow: hidden; /* Esconde qualquer conteúdo que possa estender além da altura atual */
+    transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
+}

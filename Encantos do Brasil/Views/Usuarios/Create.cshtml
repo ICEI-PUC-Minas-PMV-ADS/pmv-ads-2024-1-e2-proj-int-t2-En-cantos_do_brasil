@@ -17,35 +17,34 @@
             </div>
             <div class="registration-form">
                 <h3>Crie uma conta</h3>
-                <hr />
-                <form asp-action="Create">
-                    <div class="row g-3">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <div class="col-md-4">
-                            <label asp-for="Nome" class="control-label"></label>
-                            <input asp-for="Nome" class="form-control" />
-                            <span asp-validation-for="Nome" class="text-danger"></span>
-                        </div>
-                        <div class="col-md-6">
-                            <label asp-for="Email" class="control-label"></label>
-                            <input asp-for="Email" class="form-control" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
+                <form asp-action="Create" class="mx-auto" style="max-width: 600px;">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mb-3">
+                        <label asp-for="Nome" class="form-label"></label>
+                        <input asp-for="Nome" class="form-control custom-input" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
                     </div>
-                    <div class="col-md-3">
-                        <label asp-for="Preferencia" class="control-label"></label>
-                        <select asp-for="Preferencia" class="form-control" asp-items="Html.GetEnumSelectList<Preferencia>()"></select>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control custom-input" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Preferencia" class="form-label"></label>
+                        <select asp-for="Preferencia" class="form-control custom-input" asp-items="Html.GetEnumSelectList<Preferencia>()"></select>
                         <span asp-validation-for="Preferencia" class="text-danger"></span>
                     </div>
-                    <div class="col-md-12">
-                        <label asp-for="Senha" class="control-label"></label>
-                        <input asp-for="Senha" class="form-control" />
+                    <div class="mb-3">
+                        <label asp-for="Senha" class="form-label"></label>
+                        <input asp-for="Senha" class="form-control custom-input" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
-                    <div class="col-12">
+                    <div class="mb-3 text-center">
                         <button class="btn btn-primary" type="submit">Cadastrar</button>
                     </div>
                 </form>
+
+
             </div>
         </div>
     </div>
