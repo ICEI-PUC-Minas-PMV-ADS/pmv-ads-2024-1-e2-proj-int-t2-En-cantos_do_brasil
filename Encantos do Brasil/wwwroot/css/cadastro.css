@@ -12,7 +12,7 @@
 
 .rectangle {
     position: relative;
-    width: 350px;
+    width: 380px;
     height: 400px;
     background-color: #B3BBBB;
     border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
@@ -43,7 +43,7 @@
 }
 
 .registration-form {
-    width: 300px; /* Ajuste conforme necessário */
+    width: 30%;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -61,3 +61,36 @@
     font-size: 30px;
     white-space: nowrap; /* Impede a quebra de linha */
 }
+
+
+.registration-form > h3 {
+    text-align: center;
+    font-size: 40px; /* Ajusta o tamanho da letra para 20 pixels */
+    font-family: Poppins; /* Altere a fonte conforme necessário */
+    color: #6A7170;
+}
+.mb-3 {
+    font-family: Inter;
+}
+
+.btn-primary {
+    background-color: #6A7170; /* Cor de fundo personalizada */
+    color: white;
+    border: none; /* Sem borda */
+}
+
+
+.custom-input {
+    background-color: #F5F5F5; /* Cor de fundo personalizada */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #ced4da; /* Borda com cor padrão */
+    padding: 10px; /* Espaçamento interno */
+}
+
+    .custom-input:focus {
+        background-color: #F5F5F5; /* Cor de fundo ao focar */
+        outline: none; /* Remover o outline padrão */
+        border-color: #DAE6E5; /* Cor da borda ao focar */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+    }
+
