@@ -12,8 +12,8 @@
 
 .rectangle {
     position: relative;
-    width: 380px;
-    height: 400px;
+    width: 270px;
+    height: 320px;
     background-color: #B3BBBB;
     border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
     border-top-right-radius: 30px; /* Arredonda o canto superior direito */
@@ -27,8 +27,8 @@
     top: -100px; /* Ajusta a posição vertical do círculo */
     left: 50%; /* Centraliza horizontalmente o círculo */
     transform: translateX(-50%); /* Centraliza horizontalmente o círculo */
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     background-color: #fff;
     border-radius: 70%;
     display: flex;
@@ -38,16 +38,14 @@
 }
 
 .icon {
-    width: 165px;
-    height: 140px;
+    width: 105px;
+    height: 80px;
 }
 
 .registration-form {
     width: 30%;
     padding: 20px;
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -76,7 +74,9 @@
 .btn-primary {
     background-color: #6A7170; /* Cor de fundo personalizada */
     color: white;
-    border: none; /* Sem borda */
+    border: 1px solid #ced4da; /* Sem borda */
+    width: 105px;
+    height: 40px;
 }
 
 
