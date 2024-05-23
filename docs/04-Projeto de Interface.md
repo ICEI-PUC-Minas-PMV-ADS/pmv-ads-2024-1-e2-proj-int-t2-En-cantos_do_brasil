@@ -23,15 +23,16 @@ O Diagrama de Fluxo abaixo representa possíveis etapas que o usuário poderá r
 
 
 ## Tela Inicial
-![Home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/2a030528-210c-4c4a-b32d-b7e8f2089b66)
+![Home]![Home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/22dbd17f-a0bb-4b35-ae53-9cd6b58f0c8c)
+
 ## Conteúdo
-![Conteudo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/d6b41177-2869-4dec-bc60-528d71aeb4f2)
-## Design das Categorias 
-![Hoteis](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/ef3c5006-2958-4e97-9f0c-7fbd6acd83dd)
+![Conteudo]![Conteudo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/388b9292-916a-429d-8d6b-152f5544a50b)
 ## Cadastro
-![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/f4b4e7c8-b7ec-4144-b661-305554db8085)
+![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/86a74a1f-c015-4198-84cf-b6e63e3c7e6f)
+
 ## Configuração
-![Configuração](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/7093dea1-e03f-4ce7-93eb-aa931a3832b3)
+![Configuração](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/08411114-a267-464c-884c-9efcc4c3b384)
+
 
 
 
