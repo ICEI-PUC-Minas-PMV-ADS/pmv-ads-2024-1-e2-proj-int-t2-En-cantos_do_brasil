@@ -28,7 +28,7 @@ O Diagrama de Fluxo abaixo representa possíveis etapas que o usuário poderá r
 ## Conteúdo
 ![Conteudo]![Conteudo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/388b9292-916a-429d-8d6b-152f5544a50b)
 ## Cadastro
-![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/86a74a1f-c015-4198-84cf-b6e63e3c7e6f)
+![Sem título-1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/67f1bf98-d4b2-47b1-ab7a-ed1343e7eae7)
 
 ## Configuração
 ![Configuração](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil/assets/144967071/08411114-a267-464c-884c-9efcc4c3b384)
