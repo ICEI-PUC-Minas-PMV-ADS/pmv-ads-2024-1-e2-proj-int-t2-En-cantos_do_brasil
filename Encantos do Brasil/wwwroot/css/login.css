@@ -21,7 +21,6 @@
 }
 
 .login-image {
-    background-color: #ffe6e6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,18 +43,18 @@
 
     .login-form h2 {
         margin-bottom: 20px;
-        color: #65468a;
+        color: #808080;
       
     }
 
 .form-group {
     margin-bottom: 20px;
-    color: #65468a;
+  
 }
 
     .form-group label {
         font-size: 14px;
-        color: #65468a;
+        color: #5d5c5c;
     }
 
     .form-group input {
@@ -69,7 +68,6 @@
 button {
     width: 100%;
     padding: 10px;
-    background-color: #9d77cb;
     border: none;
     border-radius: 5px;
     color: white;
@@ -78,15 +76,8 @@ button {
     margin-top: 10px;
 }
 
-    button:hover {
-        background-color: #9d77cb;
-    }
-
-.text-danger {
-    color: #9d77cb;
-}
 
 
 .btn.btn-primary.mb-2 {
-    background-color: #8599b8;
+    background-color: #808080;
 }
