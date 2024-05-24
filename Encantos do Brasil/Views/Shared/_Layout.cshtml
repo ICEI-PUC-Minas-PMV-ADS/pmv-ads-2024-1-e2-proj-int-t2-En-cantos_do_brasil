@@ -18,51 +18,59 @@
 
 <body>
 
-    <header>
-        <div class="container">
+    <header class="align-content-center">
+        <div class="conteiner">
 
-
-
-
-            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end container">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse ml-auto d-flex justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ml-auto">
-                            <h4> Melhores Destinos</h4>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color:black; ">Home</a>
                         </li>
                         <li class="nav-item ml-auto">
-                            <a class="nav-link" asp-area="" asp-controller="Estados" asp-action="Index" style="color:black; ">Estados</a>
+                            <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Create" style="color:black; ">Cadastro</a>
                         </li>
                         <li class="nav-item ml-auto">
                             <a class="nav-link" asp-area="" asp-controller="Cidades" asp-action="Index" style="color:black; ">Cidades</a>
                         </li>
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" asp-area="" asp-controller="RegiaoPais" asp-action="Index" style="color: black ; ">Regiões</a>
-                        </li>
+
+
+                        <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex nav-item ml-auto" role="search">
+                            <input class="form-control me-2 rounded-pill  " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
+
+                        </form>
 
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item ml-auto">
-                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                            @*      <li class="collapse navbar-collapse ml-auto d-flex justify-content">
+                        Olá, @User.Identity.Name.Split(' ')[0]
+                        </li>
+                        <li class="collapse navbar-collapse ml-auto d-flex justify-content"><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"> </a></li>
+                        *@
+                            <li class="collapse navbar-collapse ml-auto d-flex justify-content">
+                                @{
+                                    var fullName = User.Identity.Name;
+                                    var firstName = fullName.Split(' ')[0];
+                                    var formattedFirstName = char.ToUpper(firstName[0]) + firstName.Substring(1).ToLower();
+                                }
+                                Olá, @formattedFirstName
                             </li>
+
+
                         }
 
                         else
                         {
-                            <li class="nav-item ml-auto">
+                            <li class="collapse navbar-collapse ml-auto d-flex justify-content">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)">Login</a>
                             </li>
                         }
 
                     </ul>
 
-                    <form asp-action="FazerPesquisa" asp-controller="Home" class="d-flex " role="search">
-                        <input class="form-control me-2 rounded-pill  " type="search" name="pesquisa" placeholder="Buscar" aria-label="Search">
-
-                    </form>
                 </div>
             </nav>
         </div>
