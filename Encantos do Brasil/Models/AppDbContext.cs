@@ -29,5 +29,7 @@ namespace Encantos_do_Brasil.Models
         public DbSet<TextoCidade> TextoCidades { get; set; }
 
         public DbSet<TextoEstado> TextoEstados { get; set; }
+
+        public DbSet<Comentario> Comentarios { get; set; }
     }
 }
