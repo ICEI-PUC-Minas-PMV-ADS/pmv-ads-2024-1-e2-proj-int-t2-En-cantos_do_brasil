@@ -29,11 +29,6 @@
     font-family: judson; /* Altere a fonte conforme necessário */
 }
 
-.container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
-}
-
 .image-container {
     display: flex;
 }
@@ -42,34 +37,4 @@
     width: 225%; /* Define a largura desejada da imagem */
     height: auto; /* Mantém a proporção da imagem */
     margin-right: 20px; /* Adiciona um espaço entre a imagem e o título */
-}
-
-.tituloQuandoIr {
-    color: #07555f;
-    font-family: News706 BT; /* Altere a fonte conforme necessário */
-    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
-    margin-bottom: 45px; /* Reduza a margem inferior para aproximar do texto */
-    white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
-    text-align: end;
-}
-
-.paragrafoQuandoIr {
-    font-size: 20px;
-    padding: 10px;
-    line-height: 1.4;
-    font-family: judson;
-}
-
-.paragrafoLagoas {
-    text-align: right; /* Alinha o texto de lagoas à esquerda */
-    font-size: 20px;
-    padding: 10px;
-    line-height: 1.4;
-    font-family: judson;
-}
-
-
-.img-thumbnail {
-    max-width: 350px; /* Define a largura máxima das imagens */
-    height: auto; /* Mantém a proporção da imagem */
 }
