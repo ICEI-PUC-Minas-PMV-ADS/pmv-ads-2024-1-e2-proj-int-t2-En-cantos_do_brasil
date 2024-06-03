@@ -47,9 +47,9 @@
                         {
                             @*      <li class="collapse navbar-collapse ml-auto d-flex justify-content">
                         Olá, @User.Identity.Name.Split(' ')[0]
-                        </li>
-                        <li class="collapse navbar-collapse ml-auto d-flex justify-content"><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"> </a></li>
-                        *@
+                        </li>    *@
+                       
+                    
                             <li class="collapse navbar-collapse ml-auto d-flex justify-content">
                                 @{
                                     var fullName = User.Identity.Name;
@@ -59,7 +59,7 @@
                                 Olá, @formattedFirstName
                             </li>
 
-
+                            <li class="collapse navbar-collapse ml-auto d-flex justify-content"><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                         }
 
                         else
