@@ -54,6 +54,13 @@ footer {
     text-align: right; /* Alinha o texto à direita */
 }
 
+
+h1 {
+    font-family: 'Katibeh', cursive;
+    font-size: 65px;
+    color: #3d6f6f;
+}
+
 h4, h5 {
     margin: 0;
     font-size: 15px; /* Tamanho do texto reduzido */
@@ -84,3 +91,8 @@ h4, h5 {
         padding: 0;
         margin-top: 5px;
     }
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
