@@ -1,0 +1,64 @@
+﻿.user-settings-header {
+    display: flex;
+    align-items: center;
+}
+
+    .user-settings-header .header-title {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .user-settings-header .icon-settings {
+        display: flex;
+        align-items: center;
+    }
+    .user-settings-header .header-title h3 {
+        margin-left: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-size: 35px;
+        color: #808080;
+    }
+.user-settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.user-settings-header {
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.user-settings-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.user-settings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 0 5px;
+}

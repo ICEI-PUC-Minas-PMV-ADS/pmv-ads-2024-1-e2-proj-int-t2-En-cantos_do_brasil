@@ -14,7 +14,6 @@ body {
     padding: 2%;
 }
 
-
 header {
     position: fixed;
     top: 0;
@@ -23,12 +22,12 @@ header {
     width: 100%;
     height: 11%;
     /* Altura inicial da barra */
-    text-align: center;
-    z-index: 1000; /**/ /* Garante que o cabeçalho fique sobre outros elementos */
-    overflow: hidden; /*Esconde qualquer conteúdo que possa estender além da altura atual */
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    overflow: hidden; /* Esconde qualquer conteúdo que possa estender além da altura atual */
     transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
+    display: flex;
+    align-items: center;
 }
-
 
 footer {
     height: 75px; /* Altura reduzida do footer */
@@ -42,6 +41,34 @@ footer {
     padding: 20px 30px;
     box-sizing: border-box;
 }
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 68px; /* Ajuste conforme necessário */
+    /* Pode adicionar mais estilos para a logo aqui */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Garantir que o nav-items fique à direita */
+}
+
+.form-control {
+    margin-left: 20px; /* Adicione espaçamento conforme necessário */
+}
+
+.nav-item span, .nav-item form {
+    display: flex;
+    align-items: center;
+}
+
 
 .left {
     display: flex;
@@ -63,7 +90,7 @@ h1 {
 
 h4, h5 {
     margin: 0;
-    font-size: 15px; /* Tamanho do texto reduzido */
+    font-size: 15px;  Tamanho do texto reduzido 
 }
 
 
@@ -96,3 +123,14 @@ h4, h5 {
     height: 200px;
     object-fit: cover;
 }
+
+
+.card {
+    width: 18rem;
+    height: 20rem;  Defina uma altura fixa para os cards 
+}
+
+    .card img {
+        height: 200px;  Altura fixa para as imagens 
+        object-fit: cover;  Ajusta a imagem para cobrir o espaço definido 
+    }
