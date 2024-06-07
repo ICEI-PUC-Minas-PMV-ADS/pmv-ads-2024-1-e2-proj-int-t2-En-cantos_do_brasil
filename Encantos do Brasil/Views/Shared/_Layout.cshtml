@@ -37,8 +37,9 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Edit" style="color:black;">Editar</a>
+                                <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)" style="color:black;">Perfil</a>
                             </li>
+
                         }
                         else
                         {
