@@ -3,92 +3,47 @@
 @{
     ViewData["Title"] = "Index";
 }
-<head>
+
+<h1 class="p-4">Cidades</h1>
+
+<div class="container d-flex flex-wrap justify-content-center gap-4">
+
+    @foreach (var item in Model)
+    {
+
+        var background = item.ImagensCidades.FirstOrDefault();
+
+        if (background == null)
+        {
+
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Estados/DetalhesEstado/@item.Id">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.melhoresdestinos.com.br%2Fo-que-fazer-em-belo-horizonte.html&psig=AOvVaw0jDAEjncXaiBqEYbx8zpkm&ust=1718060546847000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCOu7fQz4YDFQAAAAAdAAAAABAE" alt="background" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Nome)</p>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Regiao.Nome)</p>
+                </div>
+            </div>
+
+        }
+        else
+        {
 
 
-</head>
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Estados/DetalhesEstado/@item.Id">
+                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(background.Dados)" alt="background" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Nome)</p>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Regiao.Nome)</p>
+                </div>
+            </div>
+        }
 
-<body>  
+    }
 
-    <div class="img-fluid">
-        <div class="img-fluid">
-            <img src="/css/Jericoacoara.png" class="d-block w-100" alt="...">
-        </div>
-
-<div class="tituloCidade">
-    <section>
-        <h1>Jericoacoara, Ceará</h1>
-    </section>
 </div>
-<div>
-    <p class="paragrafoDestaque">
-        Já bastante conhecida entre os turistas brasileiros e até estrangeiros, Jericoacoara é uma vila pequena na beira do mar, que está em uma região de dunas e próxima de lagoas de águas cristalinas. É um destino com vários hotéis e pousadas, ótimos restaurantes e que promete dias com lindos fins de tarde a partir da Duna do Pôr-do-Sol, que é uma das atrações da vila. Para quem gosta de velejar, é um lugar ótimo e para quem ainda não veleja, pode ser uma boa oportunidade para começar o esporte!
-    </p>
-</div>
-
-
-<div class="tituloCidade">
-    <section>
-        <h1>Como chegar </h1>
-    </section>
-</div>
-<div>
-    <p class="paragrafoComoChegar">
-O aeroporto mais próximo de Jericoacoara é o novo Aeroporto Regional de Jericoacoara (JJD), que está localizado a cerca de 30 km da vila, na cidade de Cruz. Outra alternativa é voar até o Ceará para o Aeroporto Internacional de Fortaleza (FOR) e então pegar um transfer ou ônibus para percorrer os 300 km até Jericoacoara. 
-Há também quem chegue até Jericoacoara de carro próprio, mas você não vai poder entrar com ele na vila, deverá deixar seu carro estacionado do lado de fora. Muitos dos passeios também precisam ser feitos em buggy ou outro veículo especial com guia.    </p>
-</div>
-
-
-<div class="tituloCidade">
-    <section>
-        <h1>Hotéis e Jericoacoara</h1>
-    </section>
-</div>
-<div>
-    <p class="paragrafoDestaque">
-        Escolher onde ficar em Jericoacoara vai fazer toda a diferença na sua viagem. A vila tem hotéis muito bem avaliados, de opções mais econômicas a hotéis conhecidos no país inteiro. O hotel mais famoso de Jericoacoara é o Essenza Hotel (foto), indicado para quem busca algo mais exclusivo. 
-        O My Blue Hotel e o Chez Toi também oferecem bastante conforto, enquanto a Pousada Carcacá e a Villa Caju têm um ótimo custo-benefício. Sugerimos que comece sua busca com antecedência, especialmente se você pretende viajar em época de alta temporada. 
-    </p>
-</div>
-
-
-</body>
-
-
-
-
-
-@* <p>
-    <a asp-action="Create">Create New</a>
-</p> *@
-@* <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado.Nome)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> *@
-

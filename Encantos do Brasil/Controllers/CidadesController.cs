@@ -24,7 +24,7 @@ namespace Encantos_do_Brasil.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Cidades.Include(c => c.Estado);
+            var appDbContext = _context.Cidades.Include(c => c.Estado).Include(i=> i.ImagensCidades);
             return View(await appDbContext.ToListAsync());
         }
 
