@@ -9,7 +9,7 @@ namespace Encantos_do_Brasil.ViewModels
         {
             ImagemEstados = new List<ImagemEstado>();
             ImagemCidades = new List<ImagemCidade>();
-          
+       
         }
 
         public List<ImagemEstado> ImagemEstados { get; set; }
