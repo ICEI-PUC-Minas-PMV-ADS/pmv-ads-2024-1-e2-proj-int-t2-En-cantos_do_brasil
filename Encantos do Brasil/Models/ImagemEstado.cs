@@ -23,9 +23,9 @@ namespace Encantos_do_Brasil.Models
 
         [Display(Name = "Estado")]
         [Required(ErrorMessage = "Escolha um estado!")]
+        [ForeignKey("Estado")]
         public int IdEstado { get; set; }
 
-        [ForeignKey("IdCidade")]
         public Estado Estado { get; set; }
     }
 }

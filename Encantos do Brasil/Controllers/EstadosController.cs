@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Encantos_do_Brasil.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Encantos_do_Brasil.Controllers
 {
@@ -23,6 +24,30 @@ namespace Encantos_do_Brasil.Controllers
         {
             var appDbContext = _context.Estados.Include(e => e.Regiao);
             return View(await appDbContext.ToListAsync());
+        }
+
+        
+        
+        public async Task<ActionResult> DetalhesEstado(int id)
+        {
+            if(id == 0)
+            {
+                return RedirectToAction("index");
+            }
+
+            var estado = this._context.TextoEstados
+                                              .Include(i => i.Estado)
+                                              .ThenInclude(i => i.ImagensEstados)
+                                              .Where(w => w.IdEstado == id).ToList();
+
+            //Todo: Arrumar o retorno quando não encontrar o estado com o id informado
+            if(estado == null)
+            {
+               
+                return RedirectToAction("index");
+            }
+
+            return View("Estado", estado);
         }
 
         // GET: Estados/Details/5
