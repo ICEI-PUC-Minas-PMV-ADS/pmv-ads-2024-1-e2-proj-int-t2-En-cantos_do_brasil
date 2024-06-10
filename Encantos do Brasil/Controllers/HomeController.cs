@@ -43,7 +43,7 @@ namespace Encantos_do_Brasil.Controllers
                                                             .ThenInclude(i => i.Cidades)
                                                                 .ThenInclude(i => i.ImagensCidades)
                                                             .Include(r => r.Estados)
-                                                                .ThenInclude(i => i.ImagensEstados)
+                                                                .ThenInclude(i => i.ImagensEstado)
                                                             .Where(w => w.Estados.Any(a => a.Preferencia == preferenciaEnum))
                                                             .ToList();
                 }
@@ -53,12 +53,12 @@ namespace Encantos_do_Brasil.Controllers
                                                             .ThenInclude(i => i.Cidades)
                                                                 .ThenInclude(i => i.ImagensCidades)
                                                             .Include(r => r.Estados)
-                                                                .ThenInclude(i => i.ImagensEstados)
+                                                                .ThenInclude(i => i.ImagensEstado)
                                                             .Where(w => w.Id == id)
                                                             .ToList();
                 }
 
-                viewModel.ImagemEstados = cidadesEstados.SelectMany(s => s.Estados.SelectMany(s => s.ImagensEstados)).ToList();
+                viewModel.ImagemEstados = cidadesEstados.SelectMany(s => s.Estados.SelectMany(s => s.ImagensEstado)).ToList();
                 viewModel.ImagemCidades = cidadesEstados.SelectMany(s => s.Estados.SelectMany(s => s.Cidades.SelectMany(sm=>sm.ImagensCidades))).ToList();
 
                 //var todasAsCidades = await _context.Cidades.Where(p => p.Preferencia == preferenciaEnum).ToListAsync();

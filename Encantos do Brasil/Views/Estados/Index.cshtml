@@ -27,4 +27,38 @@
     </div>
 }
 
+
+    @foreach (var item in Model)
+    {
+
+        var background = item.ImagensEstado.FirstOrDefault();
+
+        if (background == null)
+        {
+
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Estados/DetalhesEstado/@item.Id">
+                    <img src="https://s2-casavogue.glbimg.com/pGduDbiKGCTguNBLTf-ua5lktFA=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/R/y/EoOHxaQ62cwUyG1EyD9g/06-as-paisagens-naturais-mais-lindas-do-brasil-fernando-de-noronha2-min.jpg" alt="background" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Regiao.Nome)</p>
+                </div>
+            </div>
+
+        }
+        else
+        {
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Estados/DetalhesEstado/@item.Id">
+                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(background.Dados)" alt="background" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Regiao.Nome)</p>
+                </div>
+            </div>
+        }
+
+    }
 </div>

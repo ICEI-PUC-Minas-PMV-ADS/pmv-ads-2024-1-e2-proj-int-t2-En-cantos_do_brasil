@@ -21,7 +21,7 @@ namespace Encantos_do_Brasil.Controllers
         // GET: TextosEstados
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.TextoEstados.Include(t => t.Estado);
+            var appDbContext = _context.TextoEstados.Include(t => t.Cidade);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             var textoEstado = await _context.TextoEstados
-                .Include(t => t.Estado)
+                .Include(t => t.Cidade)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (textoEstado == null)
             {
@@ -130,7 +130,7 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             var textoEstado = await _context.TextoEstados
-                .Include(t => t.Estado)
+                .Include(t => t.Cidade)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (textoEstado == null)
             {

@@ -20,9 +20,9 @@ namespace Encantos_do_Brasil.Models
 
         [Display(Name = "Cidade")]
         [Required(ErrorMessage = "Escolha uma cidade!")]
+        [ForeignKey("Cidade")]
         public int IdCidade { get; set; }
 
-        [ForeignKey("IdCidade")]
         public Cidade Cidade { get; set; }
     }
 

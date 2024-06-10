@@ -1,4 +1,4 @@
-﻿@model List<Encantos_do_Brasil.Models.TextoEstado>
+﻿@model List<Encantos_do_Brasil.Models.TextoCidade>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,7 +7,7 @@
 <div class="img-fluid">
 
     @{
-        var background = Model.FirstOrDefault().Cidade.ImagensEstado.FirstOrDefault();
+        var background = Model.FirstOrDefault().Cidade.ImagensCidades.FirstOrDefault();
 
         if (background == null)
         {

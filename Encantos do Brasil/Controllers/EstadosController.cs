@@ -22,7 +22,8 @@ namespace Encantos_do_Brasil.Controllers
         // GET: Estados
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Estados.Include(e => e.Regiao);
+            var appDbContext = _context.Estados.Include(e => e.Regiao)
+                .Include(i=> i.ImagensEstado);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -36,8 +37,8 @@ namespace Encantos_do_Brasil.Controllers
             }
 
             var estado = this._context.TextoEstados
-                                              .Include(i => i.Estado)
-                                              .ThenInclude(i => i.ImagensEstados)
+                                              .Include(i => i.Cidade)
+                                              .ThenInclude(i => i.ImagensEstado)
                                               .Where(w => w.IdEstado == id).ToList();
 
             //Todo: Arrumar o retorno quando não encontrar o estado com o id informado

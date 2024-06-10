@@ -14,6 +14,7 @@ namespace Encantos_do_Brasil.Controllers
     public class CidadesController : Controller
     {
         private readonly AppDbContext _context;
+        private object cidade;
 
         public CidadesController(AppDbContext context)
         {
@@ -166,6 +167,29 @@ namespace Encantos_do_Brasil.Controllers
         private bool CidadeExists(int id)
         {
           return _context.Cidades.Any(e => e.Id == id);
+        }
+
+        [AllowAnonymous]
+        public async Task<ActionResult> DetalhesCidades(int id)
+        {
+            if (id == 0)
+            {
+                return RedirectToAction("index");
+            }
+
+            var cidades = this._context.TextoCidades
+                                              .Include(i => i.Cidade)
+                                              .ThenInclude(i => i.ImagensCidades)
+                                              .Where(w => w.IdCidade == id).ToList();
+
+            //Todo: Arrumar o retorno quando não encontrar o estado com o id informado
+            if (cidades == null)
+            {
+
+                return RedirectToAction("index");
+            }
+
+            return View("Cidade", cidades);
         }
     }
 }

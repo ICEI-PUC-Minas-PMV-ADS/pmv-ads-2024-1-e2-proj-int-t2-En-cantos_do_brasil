@@ -25,7 +25,7 @@ namespace Encantos_do_Brasil.Models
 
         public ICollection<Cidade> Cidades { get; set; }
 
-        public ICollection<ImagemEstado> ImagensEstados { get; set; }
+        public ICollection<ImagemEstado> ImagensEstado{ get; set; }
 
         public ICollection<TextoEstado> TextosEstados { get; set; }
     }

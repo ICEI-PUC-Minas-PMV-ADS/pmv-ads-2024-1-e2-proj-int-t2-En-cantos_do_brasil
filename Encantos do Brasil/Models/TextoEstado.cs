@@ -23,6 +23,7 @@ namespace Encantos_do_Brasil.Models
         public int IdEstado { get; set; }
 
         [ForeignKey("IdEstado")]
-        public Estado Estado { get; set; }
+        public Estado Cidade { get; set; }
+        public int IdCidade { get; internal set; }
     }
 }
