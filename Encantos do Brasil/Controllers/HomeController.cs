@@ -54,7 +54,7 @@ namespace Encantos_do_Brasil.Controllers
                                                                 .ThenInclude(i => i.ImagensCidades)
                                                             .Include(r => r.Estados)
                                                                 .ThenInclude(i => i.ImagensEstado)
-                                                            .Where(w => w.Id == id)
+                                                            .Where(w => w.Id == id) 
                                                             .ToList();
                 }
 
