@@ -53,11 +53,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-01 | Cadastro de Usuário: Permitir que os usuários se cadastrem na plataforma para acessar funcionalidades exclusivas. | Alta | 
 | RF-02 | Tela de Login: A aplicação deve permitir que os usuários façam login e logout. | Alta |
 | RF-03 | Barra de Pesquisa: O usuário deve ser capaz de pesquisar destinos por nome, região, atividades disponíveis, etc. | Alta |
-| RF-04 | A aplicação deve fornecer informações detalhadas sobre os destinos, incluindo atrações turísticas, atividades disponíveis, melhores épocas para visitar, custo de vida, entre outros. | Alta |
-| RF-05 | A aplicação deve oferecer roteiros personalizados com base nas preferências dos usuários, como interesse em ecoturismo, cultura local, aventura, etc. | Média |
-| RF-06 | Os usuários devem ser capazes de deixar avaliações e comentários sobre os destinos. | Alta |
-| RF-07 | O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc. | Média |
-| RF-08 | A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. | Alta |
+| RF-04 | A aplicação deve fornecer informações detalhadas sobre os destinos. | Alta |
+| RF-05 | A aplicação deve oferecer roteiros personalizados com base nas preferências dos usuários. | Média |
+| RF-06 | O sistema deve direcionar o usuário para uma página de reserva e consulta de hospedagens, atividades turísticas, etc. | Média |
+| RF-07 | A aplicação deve permitir que os usuários adicionem destinos em sua lista de favoritos. | Alta |
 
 ### Requisitos não Funcionais
 
