@@ -1,29 +1,20 @@
 message: Please cite this software using these metadata.
-title:
+title: En-Cantos-do Brasil 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names:  Maria da Silva Machado
+    given-names: Luiza
+  - family-names: Giovanna de Souza e Maia
+    given-names: Marcelly
+  - name-suffix: Professor
+    affiliation: PUC Minas - ADS
+    family-names: Wilson da Costa
+    given-names: José
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
 keywords:
-  - 
-  - 
-repository-code: 
+  - Pesquisas
+  - Encantos do Brasil 
+  - Melhores Lugares
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t2-En-cantos_do_brasil.git
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-20
