@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Encantos_do_Brasil.Models.ImagemEstado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a href="/ImagensCidades/UploadImagem">Imagem Cidade</a>
+    <a href="/ImagensEstados/UploadImagem">Imagem Estado</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoConteudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoImagem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEstado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoConteudo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoImagem)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdEstado)
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

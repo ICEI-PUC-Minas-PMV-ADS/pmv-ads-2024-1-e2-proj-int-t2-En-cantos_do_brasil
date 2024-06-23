@@ -1,0 +1,40 @@
+﻿
+
+.tituloCidade {
+    text-align: start;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    color: #07555f;
+    font-family: News706 BT; /* Altere a fonte conforme necessário */
+    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+}
+
+
+.paragrafoDestaque {
+    width: 50%; /* Ajuste a largura conforme necessário */
+    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
+    margin-right: 20px; /* Adiciona um espaço entre o texto e outros elementos */
+    font-size: 20px; /* Ajusta o tamanho da letra para 20 pixels */
+    padding: 10px; /* Adiciona 10 pixels de espaçamento ao redor do texto */
+    line-height: 1.4; /* Ajusta o espaçamento entre as linhas do texto */
+    font-family: judson; /* Altere a fonte conforme necessário */  
+}
+
+.paragrafoComoChegar {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 20px; /* Ajusta o tamanho da letra para 20 pixels */
+    padding: 10px; /* Adiciona 10 pixels de espaçamento ao redor do texto */
+    line-height: 1.4; /* Ajusta o espaçamento entre as linhas do texto */
+    font-family: judson; /* Altere a fonte conforme necessário */
+}
+
+.image-container {
+    display: flex;
+}
+
+.img-thumbnail {
+    width: 225%; /* Define a largura desejada da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Adiciona um espaço entre a imagem e o título */
+}

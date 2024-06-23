@@ -1,0 +1,96 @@
+﻿.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.rectangle {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    background-color: #B3BBBB;
+    border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 30px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 0; /* Mantém o canto inferior esquerdo reto */
+    border-bottom-right-radius: 0; /* Mantém o canto inferior direito reto */
+    margin-right: 65px; /* Ajuste o valor conforme necessário para mover mais para a direita */
+}
+
+.circle {
+    position: absolute;
+    top: -100px; /* Ajusta a posição vertical do círculo */
+    left: 50%; /* Centraliza horizontalmente o círculo */
+    transform: translateX(-50%); /* Centraliza horizontalmente o círculo */
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 105px;
+    height: 80px;
+}
+
+.registration-form {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial Rounded MT';
+    color: white;
+    font-size: 30px;
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+
+.registration-form > h3 {
+    text-align: center;
+    font-size: 40px; /* Ajusta o tamanho da letra para 20 pixels */
+    font-family: Poppins; /* Altere a fonte conforme necessário */
+    color: #6A7170;
+}
+.mb-3 {
+    font-family: Inter;
+}
+
+.btn-primary {
+    background-color: #6A7170; /* Cor de fundo personalizada */
+    color: white;
+    border: 1px solid #ced4da; /* Sem borda */
+    width: 105px;
+    height: 40px;
+}
+
+
+.custom-input {
+    background-color: #F5F5F5; /* Cor de fundo personalizada */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #ced4da; /* Borda com cor padrão */
+    padding: 10px; /* Espaçamento interno */
+}
+
+    .custom-input:focus {
+        background-color: #F5F5F5; /* Cor de fundo ao focar */
+        outline: none; /* Remover o outline padrão */
+        border-color: #DAE6E5; /* Cor da borda ao focar */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+    }
+

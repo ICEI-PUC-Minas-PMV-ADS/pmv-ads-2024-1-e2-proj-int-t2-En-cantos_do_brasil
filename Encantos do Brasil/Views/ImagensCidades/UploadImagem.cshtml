@@ -1,0 +1,25 @@
+﻿@model Encantos_do_Brasil.Models.ImagemCidade
+
+@{
+    ViewData["Title"] = "UploadImagem";
+}
+
+<form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="arquivo">Selecione uma imagem:</label>
+        <input type="file" name="arquivo" id="arquivo" class="form-control-file" />
+        <span asp-validation-for="Dados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="IdCidade">Selecione uma cidade:</label>
+        <select name="cidadeId" id="IdCidade" class="form-control" asp-items="ViewBag.IdCidade">
+        </select>
+        <span asp-validation-for="IdCidade" class="text-danger"></span>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="TipoImagem" class="control-label"></label>
+        <select asp-for="TipoImagem" class="form-control" asp-items="Html.GetEnumSelectList<TipoImagem>()"></select>
+        <span asp-validation-for="TipoImagem" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

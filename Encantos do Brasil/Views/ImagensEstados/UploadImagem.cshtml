@@ -1,0 +1,22 @@
+﻿@model Encantos_do_Brasil.Models.ImagemEstado
+
+<form asp-action="UploadImagem" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="arquivo">Selecione uma imagem:</label>
+        <input type="file" name="arquivo" id="arquivo" class="form-control-file" />
+        <span asp-validation-for="Dados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="IdEstado">Selecione uma estado:</label>
+        <select name="estadoId" id="IdEstado" class="form-control" asp-items="ViewBag.IdEstado">
+        </select>
+        <span asp-validation-for="IdEstado" class="text-danger"></span>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="TipoImagem" class="control-label"></label>
+        <select asp-for="TipoImagem" class="form-control" asp-items="Html.GetEnumSelectList<TipoImagem>()"></select>
+        <span asp-validation-for="TipoImagem" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+

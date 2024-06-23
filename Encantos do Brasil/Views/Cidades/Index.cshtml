@@ -1,0 +1,56 @@
+﻿@using Encantos_do_Brasil.Extention;
+@model IEnumerable<Encantos_do_Brasil.Models.Cidade>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="p-4">Cidades</h1>
+
+<div class="container d-flex flex-wrap justify-content-center gap-4">
+
+    @foreach (var item in Model)
+    {
+
+        var background = item.ImagensCidades.FirstOrDefault();
+
+        if (background == null)
+        {
+
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Cidades/Index">
+                    <img src="https://www.passagenspromo.com.br/blog/wp-content/uploads/2019/02/dicas-de-passeios-turisticos-POA.jpg" alt="ok" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                  
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Nome)</p>
+                    
+                 
+
+                   
+                </div>
+            </div>
+
+        }
+        else
+        {
+
+
+            <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+                <a href="~/Cidades/DetalhesCidades/@item.Id">
+                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(background.Dados)" alt="background" class="imagem_fundo card-img-top">
+                </a>
+                <div class="card-body">
+                   
+                    <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-title"> @Html.DisplayFor(modelItem => item.Preferencia)</p>
+                    <p>@item.Estado.Preferencia.GetDescription()</p>
+                   
+
+                </div>
+            </div>
+        }
+
+    }
+
+</div>

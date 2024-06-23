@@ -1,0 +1,65 @@
+﻿@using Encantos_do_Brasil.Extention;
+@model Encantos_do_Brasil.ViewModels.CidadeEstadoViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="text-center p-8">
+    <img src="~/css/CapaPrincipal.png" alt="background" class="imagem_fundo mb-4">
+</div>
+
+<div class="col-md-12 p-3 text-center">
+    <section>
+        <h1>Melhores Destinos</h1>
+    </section>
+</div>
+
+<div class="container d-flex flex-wrap justify-content-center gap-4">
+
+
+
+
+    @foreach (var cidade in Model.ImagemCidades.Select((value, index) => new { value, index }))
+    {
+        <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+            <a href="~/Cidades/DetalhesCidades/@cidade.value.Cidade.Id">
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(cidade.value.Dados)" alt="background" class="imagem_fundo card-img-top">
+
+            </a>
+            <div class="card-body">
+                <h5>@cidade.value.Cidade.Estado.Nome</h5>
+                <p>@cidade.value.Cidade.Nome</p>
+                <p>@cidade.value.Cidade.Estado.Preferencia.GetDescription()</p>
+
+            </div>
+        </div>
+
+        @if ((cidade.index + 1) % 3 == 0)
+        {
+            <div class="w-100"></div>
+        }
+    }
+
+    @foreach (var estado in Model.ImagemEstados.Select((value, index) => new { value, index }))
+    {
+    <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
+            <a href="~/Estados/DetalhesCidades/@estado.value.Estado.Id">
+ 
+    <img src="data:image/jpeg;base64,@Convert.ToBase64String(estado.value.Dados)" alt="background" class="imagem_fundo card-img-top">
+
+            </a>
+    <div class="card-body">
+    <h5>@estado.value.Estado.Nome</h5>
+                <p>@estado.value.Estado.Preferencia.GetDescription()</p>
+    </div>
+    </div>
+
+    @if ((estado.index + 1) % 3 == 0)
+    {
+    <div class="w-100"></div>
+    }
+    }
+
+</div>
+
+

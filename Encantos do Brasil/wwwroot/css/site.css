@@ -1,0 +1,136 @@
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    padding: 2%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #C7E7E4;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    /* Altura inicial da barra */
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    overflow: hidden; /* Esconde qualquer conteúdo que possa estender além da altura atual */
+    transition: height 0.3s; /* Adiciona um efeito de transição para a altura */
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 75px; /* Altura reduzida do footer */
+    background-color: #C7E7E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 68px; /* Ajuste conforme necessário */
+    /* Pode adicionar mais estilos para a logo aqui */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Garantir que o nav-items fique à direita */
+}
+
+.form-control {
+    margin-left: 20px; /* Adicione espaçamento conforme necessário */
+}
+
+.nav-item span, .nav-item form {
+    display: flex;
+    align-items: center;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+
+h1 {
+    font-family: 'Katibeh', cursive;
+    font-size: 65px;
+    color: #3d6f6f;
+}
+
+h4, h5 {
+    margin: 0;
+    font-size: 15px;  Tamanho do texto reduzido 
+}
+
+
+.col-lg-6.text-right {
+    color: #567C7C;
+}
+
+.col-lg-6 {
+    color: #567C7C;
+}
+
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .nav-item button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: inherit;
+        text-decoration: underline;
+        padding: 0;
+        margin-top: 5px;
+    }
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card {
+    width: 18rem;
+    height: 20rem;  Defina uma altura fixa para os cards 
+}
+
+    .card img {
+        height: 200px;  Altura fixa para as imagens 
+        object-fit: cover;  Ajusta a imagem para cobrir o espaço definido 
+    }

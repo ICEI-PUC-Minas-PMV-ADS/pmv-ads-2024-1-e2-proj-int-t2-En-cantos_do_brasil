@@ -1,0 +1,51 @@
+﻿@model List<Encantos_do_Brasil.Models.TextoCidade>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="img-fluid">
+
+    @{
+        var background = Model.FirstOrDefault().Cidade.ImagensCidades.FirstOrDefault();
+
+        if (background == null)
+        {
+            <div class="img-fluid">
+
+                <img src="/css/Jericoacoara.png" class="d-block w-100" alt="...">
+
+            </div>
+
+        }
+
+        else
+        {
+
+            <div class="img-fluid">
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(background.Dados)" class="d-block w-100" alt="">
+            </div>
+        }
+    }
+
+  
+
+    @foreach (var item in Model)
+    {
+        <div class="tituloCidade">
+            <section>
+                <h1>@item.TituloTexto </h1>
+            </section>
+        </div>
+        <div>
+            <p class="paragrafoComoChegar">
+                @item.Texto
+                <br></br>
+                @item.Texto 
+                <br></br>
+                @item.Texto
+
+            </p>
+        </div>
+    }
+</div>

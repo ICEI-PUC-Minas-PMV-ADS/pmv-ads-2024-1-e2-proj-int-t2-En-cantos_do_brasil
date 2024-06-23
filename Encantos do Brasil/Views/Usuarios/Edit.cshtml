@@ -1,0 +1,54 @@
+﻿@using Encantos_do_Brasil.Extention;
+@model Encantos_do_Brasil.Models.Usuario
+
+@{
+    ViewData["Title"] = "Configurações de Usuário";
+}
+
+<link rel="stylesheet" href="~/css/user-settings.css" />
+
+<div class="user-settings-container">
+    <div class="user-settings-container">
+        <div class="user-settings-header">
+            <img src="/css/edit.png" alt="User Icon" class="user-icon" /> <!-- Certifique-se de ter a imagem na pasta correta -->
+            <div class="header-title">
+                <span class="icon-settings"></span> <!-- Adicionando o ícone -->
+                <h3>Configurações de Usuário</h3>
+            </div>
+        </div>
+      
+    </div>
+    <form asp-action="Edit" class="user-settings-form">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Nome" class="control-label">Nome completo:</label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">Email cadastrado:</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Senha" class="control-label">Senha:</label>
+            <input asp-for="Senha" class="form-control" />
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Preferencia" class="control-label">Preferência:</label>
+            <select asp-for="Preferencia" class="form-control" asp-items="Html.GetEnumSelectList<Preferencia>()"></select>
+            <span asp-validation-for="Preferencia" class="text-danger"></span>
+        </div>
+        <div class="form-buttons">
+            <input type="submit" value="Salvar" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
