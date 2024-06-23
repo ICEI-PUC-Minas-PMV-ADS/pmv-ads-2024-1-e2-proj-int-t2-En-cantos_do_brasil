@@ -44,7 +44,7 @@ namespace Encantos_do_Brasil.Controllers
                                                                 .ThenInclude(i => i.ImagensCidades)
                                                             .Include(r => r.Estados)
                                                                 .ThenInclude(i => i.ImagensEstado)
-                                                            .Where(w => w.Estados.Any(a => a.Preferencia == preferenciaEnum))
+                                                            .Where(w => w.Estados.Any(a => a.Preferencia == preferenciaEnum && a.Cidades.Any(an => an.Preferencia == preferenciaEnum)))
                                                             .ToList();
                 }
                 else

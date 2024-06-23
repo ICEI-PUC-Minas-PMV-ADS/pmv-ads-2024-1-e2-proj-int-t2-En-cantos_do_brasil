@@ -157,7 +157,7 @@ namespace Encantos_do_Brasil.Controllers
         {
             if (_context.Favoritos == null)
             {
-                return Problem("Entity set 'AppDbContext.Favoritos'  is null.");
+                return Problem("Erro ao deletar item na tabela favoritos");
             }
             var favorito = await _context.Favoritos.FindAsync(id);
             if (favorito != null)

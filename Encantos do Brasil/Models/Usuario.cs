@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Encantos_do_Brasil.Models
@@ -26,10 +27,14 @@ namespace Encantos_do_Brasil.Models
 
     public enum Preferencia
     {
+        [Description("Destinos Exoticos")]
         DestinosExoticos,
+        [Description("Anturas ao ar Livre")]
         AventuraArLivre,
+        [Description("Patrimonio Cultural")]
         PatrimonioCultural,
+        [Description("Relaxamentos Resorts")]
         RelaxamentoResorts,
-        TurismoGastronomico
+   
     }
 }

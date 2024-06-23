@@ -12,7 +12,9 @@
         if (background == null)
         {
             <div class="img-fluid">
+
                 <img src="/css/Jericoacoara.png" class="d-block w-100" alt="...">
+
             </div>
 
         }
@@ -25,11 +27,7 @@
         }
     }
 
-    <div class="tituloCidade">
-        <section>
-            <h1>@Model.FirstOrDefault().Cidade.Nome</h1>
-        </section>
-    </div>
+  
 
     @foreach (var item in Model)
     {
@@ -41,6 +39,11 @@
         <div>
             <p class="paragrafoComoChegar">
                 @item.Texto
+                <br></br>
+                @item.Texto 
+                <br></br>
+                @item.Texto
+
             </p>
         </div>
     }

@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Encantos_do_Brasil.Models.Cidade>
+﻿@using Encantos_do_Brasil.Extention;
+@model IEnumerable<Encantos_do_Brasil.Models.Cidade>
 
 @{
     ViewData["Title"] = "Index";
@@ -17,13 +18,15 @@
         {
 
             <div class="card d-flex mt-2 mb-4" style="width: 18rem;">
-                <a href="~/Cidades/DetalhesCidades/@item.Id">
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.melhoresdestinos.com.br%2Fo-que-fazer-em-belo-horizonte.html&psig=AOvVaw0jDAEjncXaiBqEYbx8zpkm&ust=1718060546847000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCOu7fQz4YDFQAAAAAdAAAAABAE" alt="background" class="imagem_fundo card-img-top">
+                <a href="~/Cidades/Index">
+                    <img src="https://www.passagenspromo.com.br/blog/wp-content/uploads/2019/02/dicas-de-passeios-turisticos-POA.jpg" alt="ok" class="imagem_fundo card-img-top">
                 </a>
                 <div class="card-body">
                   
                     <p class="card-text">@Html.DisplayFor(modelItem => item.Estado.Nome)</p>
-                  
+                    
+                 
+
                    
                 </div>
             </div>
@@ -40,8 +43,10 @@
                 <div class="card-body">
                    
                     <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Nome)</h5>
-                
-                  
+                    <p class="card-title"> @Html.DisplayFor(modelItem => item.Preferencia)</p>
+                    <p>@item.Estado.Preferencia.GetDescription()</p>
+                   
+
                 </div>
             </div>
         }
